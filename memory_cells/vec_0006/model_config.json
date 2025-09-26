@@ -1,0 +1,9 @@
+{
+  "input_dim": 384,
+  "hidden_dim": 445,
+  "output_dim": 507,
+  "epochs": 2000,
+  "target_loss": 1e-05,
+  "actual_epochs": 257,
+  "final_loss": 7.502722837671172e-06
+}
