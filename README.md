@@ -111,7 +111,7 @@ If the memory is incomplete or fragmentary, that's normal — humans remember in
 📚 Paper
 
 The theoretical foundations and architectural design of ReMemory are described in detail in the accompanying paper:
-Reconstructive Episodic Memory (arXiv preprint):https://
+Reconstructive Episodic Memory (arXiv preprint):[https://](https://zenodo.org/records/17220514)
 ────────────────────────────
 
 ✍️ Author
