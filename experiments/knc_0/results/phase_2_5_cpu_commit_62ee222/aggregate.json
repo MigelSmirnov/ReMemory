@@ -1,0 +1,212 @@
+{
+  "trials": 10,
+  "correct_key_full_recoveries": 10,
+  "probe_convergence": {
+    "100": {
+      "mae_tokens": {
+        "mean": 441.8484375,
+        "ci95_low": 382.24402418144575,
+        "ci95_high": 501.4528508185542
+      },
+      "rmse_tokens": {
+        "mean": 551.2486724853516,
+        "ci95_low": 483.41869033671986,
+        "ci95_high": 619.0786546339832
+      },
+      "exact_fraction": {
+        "mean": 0.0015625,
+        "ci95_low": -0.0014999999999999996,
+        "ci95_high": 0.004625
+      },
+      "full_recoveries": 0,
+      "runtime_seconds": {
+        "mean": 0.002500943109043874,
+        "ci95_low": 0.002388990547863326,
+        "ci95_high": 0.002612895670224422
+      }
+    },
+    "1000": {
+      "mae_tokens": {
+        "mean": 454.2625,
+        "ci95_low": 393.2936823602374,
+        "ci95_high": 515.2313176397626
+      },
+      "rmse_tokens": {
+        "mean": 561.9322387695313,
+        "ci95_low": 489.5952457549137,
+        "ci95_high": 634.2692317841488
+      },
+      "exact_fraction": {
+        "mean": 0.0015625,
+        "ci95_low": -0.0014999999999999996,
+        "ci95_high": 0.004625
+      },
+      "full_recoveries": 0,
+      "runtime_seconds": {
+        "mean": 0.022365416804677806,
+        "ci95_low": 0.021871756780229012,
+        "ci95_high": 0.0228590768291266
+      }
+    },
+    "10000": {
+      "mae_tokens": {
+        "mean": 461.5625,
+        "ci95_low": 405.6975512669667,
+        "ci95_high": 517.4274487330333
+      },
+      "rmse_tokens": {
+        "mean": 572.1227233886718,
+        "ci95_low": 503.82371428812985,
+        "ci95_high": 640.4217324892138
+      },
+      "exact_fraction": {
+        "mean": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "full_recoveries": 0,
+      "runtime_seconds": {
+        "mean": 0.22207643290457782,
+        "ci95_low": 0.21716204756387303,
+        "ci95_high": 0.2269908182452826
+      }
+    },
+    "100000": {
+      "mae_tokens": {
+        "mean": 460.853125,
+        "ci95_low": 404.43643539919225,
+        "ci95_high": 517.2698146008078
+      },
+      "rmse_tokens": {
+        "mean": 571.3141082763672,
+        "ci95_low": 501.7907427964351,
+        "ci95_high": 640.8374737562992
+      },
+      "exact_fraction": {
+        "mean": 0.0015625,
+        "ci95_low": -0.0014999999999999996,
+        "ci95_high": 0.004625
+      },
+      "full_recoveries": 0,
+      "runtime_seconds": {
+        "mean": 2.2233853516023374,
+        "ci95_low": 2.191903173762673,
+        "ci95_high": 2.2548675294420018
+      }
+    }
+  },
+  "baselines": {
+    "parameter_only": {
+      "mae_tokens": {
+        "mean": 461.875,
+        "ci95_low": 406.97127493078733,
+        "ci95_high": 516.7787250692127
+      },
+      "exact_fraction": {
+        "mean": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "full_recoveries": 0
+    },
+    "bias_only": {
+      "mae_tokens": {
+        "mean": 1793.5140625,
+        "ci95_low": 1724.8572343639087,
+        "ci95_high": 1862.1708906360911
+      },
+      "exact_fraction": {
+        "mean": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "full_recoveries": 0
+    },
+    "midpoint": {
+      "mae_tokens": {
+        "mean": 1029.01875,
+        "ci95_low": 989.0308150541829,
+        "ci95_high": 1069.0066849458171
+      },
+      "exact_fraction": {
+        "mean": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "full_recoveries": 0
+    }
+  },
+  "coordinate_statistics": {
+    "mean_output_std": {
+      "mean": 0.41573623543227,
+      "ci95_low": 0.3615900763906561,
+      "ci95_high": 0.4698823944738839
+    },
+    "mean_absolute_deviation_from_target": {
+      "mean": 460.853125,
+      "ci95_low": 404.43643539919225,
+      "ci95_high": 517.2698146008078
+    },
+    "rmse_deviation_from_target": {
+      "mean": 571.3141082763672,
+      "ci95_low": 501.7907427964351,
+      "ci95_high": 640.8374737562992
+    },
+    "mean_interquartile_range": {
+      "mean": 1600.1421875,
+      "ci95_low": 1464.2197348217546,
+      "ci95_high": 1736.0646401782456
+    },
+    "mean_90pct_range": {
+      "mean": 2726.88125,
+      "ci95_low": 2598.60634256043,
+      "ci95_high": 2855.1561574395696
+    }
+  },
+  "activation_diagnostics_evaluator_only": {
+    "layer1": {
+      "correct_active_fraction": {
+        "mean": 0.1046875,
+        "ci95_low": 0.09173457709412446,
+        "ci95_high": 0.11764042290587555
+      },
+      "random_active_fraction": {
+        "mean": 0.49242846875,
+        "ci95_low": 0.49119391382681404,
+        "ci95_high": 0.493663023673186
+      },
+      "mean_pattern_agreement": {
+        "mean": 0.509228875,
+        "ci95_low": 0.5083449215316033,
+        "ci95_high": 0.5101128284683968
+      }
+    },
+    "layer2": {
+      "correct_active_fraction": {
+        "mean": 0.2328125,
+        "ci95_low": 0.21267851951578157,
+        "ci95_high": 0.2529464804842184
+      },
+      "random_active_fraction": {
+        "mean": 0.337040921875,
+        "ci95_low": 0.32268173493826885,
+        "ci95_high": 0.35140010881173117
+      },
+      "mean_pattern_agreement": {
+        "mean": 0.7674898593749999,
+        "ci95_low": 0.7542505414120998,
+        "ci95_high": 0.7807291773379
+      }
+    }
+  },
+  "shuffled_target_control_mae": {
+    "mean": 430.021875,
+    "ci95_low": 358.75546769180147,
+    "ci95_high": 501.2882823081986
+  },
+  "untrained_random_mean_mae": {
+    "mean": 1962.56875,
+    "ci95_low": 1893.6822838376231,
+    "ci95_high": 2031.4552161623767
+  }
+}

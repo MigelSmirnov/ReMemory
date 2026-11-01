@@ -1,0 +1,26 @@
+{
+  "input_dim": 256,
+  "hidden_dim": 64,
+  "output_dim": 64,
+  "trials": 10,
+  "probe_counts": [
+    100,
+    1000,
+    10000,
+    100000
+  ],
+  "batch_size": 100,
+  "epochs": 5000,
+  "lr": 0.01,
+  "threads": 2,
+  "environment": {
+    "python": "3.12.3",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+    "torch": "2.15.0+cpu",
+    "numpy": "2.5.4",
+    "device": "cpu",
+    "cpu_count": 8,
+    "git_revision": "62ee2222e566e24e3ea97ea4ef2c5b61bed2f6ca"
+  },
+  "secret_generation": "OS CSPRNG; entropy not persisted"
+}

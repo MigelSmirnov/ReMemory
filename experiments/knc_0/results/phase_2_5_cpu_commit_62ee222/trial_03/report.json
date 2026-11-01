@@ -1,0 +1,116 @@
+{
+  "trial": 3,
+  "training_seed": 25003,
+  "training": {
+    "steps": 200,
+    "seconds": 0.18697062600404024,
+    "final_loss": 1.2135084048736644e-09,
+    "correct_key": {
+      "exact_fraction": 1.0,
+      "all_exact": true,
+      "mae_tokens": 0.0
+    }
+  },
+  "mean_convergence": {
+    "100": {
+      "exact_fraction": 0.0,
+      "all_exact": false,
+      "mae_tokens": 437.53125,
+      "rmse_tokens": 557.9382934570312,
+      "runtime_seconds": 0.0025084920052904636
+    },
+    "1000": {
+      "exact_fraction": 0.0,
+      "all_exact": false,
+      "mae_tokens": 450.140625,
+      "rmse_tokens": 570.5916137695312,
+      "runtime_seconds": 0.021402301994385198
+    },
+    "10000": {
+      "exact_fraction": 0.0,
+      "all_exact": false,
+      "mae_tokens": 444.40625,
+      "rmse_tokens": 563.1539916992188,
+      "runtime_seconds": 0.22325780399842188
+    },
+    "100000": {
+      "exact_fraction": 0.0,
+      "all_exact": false,
+      "mae_tokens": 446.546875,
+      "rmse_tokens": 565.3033447265625,
+      "runtime_seconds": 2.240243898006156
+    }
+  },
+  "baselines": {
+    "parameter_only": {
+      "exact_fraction": 0.0,
+      "all_exact": false,
+      "mae_tokens": 446.625
+    },
+    "bias_only": {
+      "exact_fraction": 0.0,
+      "all_exact": false,
+      "mae_tokens": 1809.484375
+    },
+    "midpoint": {
+      "exact_fraction": 0.0,
+      "all_exact": false,
+      "mae_tokens": 1052.125
+    }
+  },
+  "coordinate_summary": {
+    "mean_output_std": 0.3921868092509254,
+    "mean_absolute_deviation_from_target": 446.546875,
+    "rmse_deviation_from_target": 565.3033447265625,
+    "mean_interquartile_range": 1618.828125,
+    "mean_90pct_range": 2834.203125
+  },
+  "activation_diagnostics_evaluator_only": {
+    "layer1": {
+      "correct_active_fraction": 0.125,
+      "random_active_fraction": 0.49335859374999996,
+      "mean_pattern_agreement": 0.50984453125
+    },
+    "layer2": {
+      "correct_active_fraction": 0.203125,
+      "random_active_fraction": 0.37817890625,
+      "mean_pattern_agreement": 0.74074921875
+    }
+  },
+  "shuffled_target_control": {
+    "training": {
+      "steps": 200,
+      "seconds": 0.18694163201143965,
+      "final_loss": 1.736096336135695e-11,
+      "correct_key": {
+        "exact_fraction": 1.0,
+        "all_exact": true,
+        "mae_tokens": 0.0
+      }
+    },
+    "random_mean": {
+      "exact_fraction": 0.0,
+      "all_exact": false,
+      "mae_tokens": 607.515625,
+      "rmse_tokens": 790.2098999023438,
+      "runtime_seconds": 2.2879873780184425
+    },
+    "parameter_only": {
+      "exact_fraction": 0.0,
+      "all_exact": false,
+      "mae_tokens": 609.53125
+    }
+  },
+  "untrained_control": {
+    "random_mean": {
+      "exact_fraction": 0.0,
+      "all_exact": false,
+      "mae_tokens": 2014.421875
+    },
+    "parameter_only": {
+      "exact_fraction": 0.0,
+      "all_exact": false,
+      "mae_tokens": 2015.09375
+    }
+  }
+}
