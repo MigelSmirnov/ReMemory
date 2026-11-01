@@ -1,0 +1,925 @@
+{
+  "configurations": [
+    {
+      "width": 4,
+      "parameters": 1368,
+      "trials": 30,
+      "memorization_success": {
+        "numerator": 30,
+        "denominator": 30,
+        "rate": 1.0,
+        "ci95_low": 0.8864829086095221,
+        "ci95_high": 1.0
+      },
+      "occurrence_models": {
+        "numerator": 22,
+        "denominator": 30,
+        "rate": 0.7333333333333333,
+        "ci95_low": 0.5555169795568831,
+        "ci95_high": 0.8581750444608938
+      },
+      "occurrence_fraction": {
+        "mean": 0.10691731770833333,
+        "ci95_low": 0.060354368365628804,
+        "ci95_high": 0.15348026705103787
+      },
+      "distinct_arrays": {
+        "mean": 3510.733333333333,
+        "ci95_low": 3335.3090747407905,
+        "ci95_high": 3686.1575919258757
+      },
+      "distinct_patterns": {
+        "mean": 52.03333333333333,
+        "ci95_low": 46.1237573963655,
+        "ci95_high": 57.942909270301165
+      },
+      "runtime_seconds": {
+        "mean": 0.05423208289818528,
+        "ci95_low": 0.053265894683171104,
+        "ci95_high": 0.05519827111319945
+      },
+      "methods": {
+        "mode": {
+          "recall_at_1": {
+            "numerator": 22,
+            "denominator": 30,
+            "rate": 0.7333333333333333,
+            "ci95_low": 0.5555169795568831,
+            "ci95_high": 0.8581750444608938
+          },
+          "recall_at_k": {
+            "numerator": 22,
+            "denominator": 30,
+            "rate": 0.7333333333333333,
+            "ci95_low": 0.5555169795568831,
+            "ci95_high": 0.8581750444608938
+          },
+          "mrr": {
+            "mean": 0.7333333333333333,
+            "ci95_low": 0.5723828995172238,
+            "ci95_high": 0.8942837671494428
+          }
+        },
+        "median_medoid": {
+          "recall_at_1": {
+            "numerator": 1,
+            "denominator": 30,
+            "rate": 0.03333333333333333,
+            "ci95_low": 0.0059084379948573795,
+            "ci95_high": 0.16670751396958874
+          },
+          "recall_at_k": {
+            "numerator": 1,
+            "denominator": 30,
+            "rate": 0.03333333333333333,
+            "ci95_low": 0.0059084379948573795,
+            "ci95_high": 0.16670751396958874
+          },
+          "mrr": {
+            "mean": 0.03333333333333333,
+            "ci95_low": -0.031999999999999994,
+            "ci95_high": 0.09866666666666665
+          }
+        },
+        "local_stability": {
+          "recall_at_1": {
+            "numerator": 22,
+            "denominator": 30,
+            "rate": 0.7333333333333333,
+            "ci95_low": 0.5555169795568831,
+            "ci95_high": 0.8581750444608938
+          },
+          "recall_at_k": {
+            "numerator": 22,
+            "denominator": 30,
+            "rate": 0.7333333333333333,
+            "ci95_low": 0.5555169795568831,
+            "ci95_high": 0.8581750444608938
+          },
+          "mrr": {
+            "mean": 0.7333333333333333,
+            "ci95_low": 0.5723828995172238,
+            "ci95_high": 0.8942837671494428
+          }
+        },
+        "analytic_moment": {
+          "recall_at_1": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "recall_at_k": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "mrr": {
+            "mean": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0
+          }
+        },
+        "random_first": {
+          "recall_at_1": {
+            "numerator": 4,
+            "denominator": 30,
+            "rate": 0.13333333333333333,
+            "ci95_low": 0.05309569424218104,
+            "ci95_high": 0.2968168394441695
+          },
+          "recall_at_k": {
+            "numerator": 4,
+            "denominator": 30,
+            "rate": 0.13333333333333333,
+            "ci95_low": 0.05309569424218104,
+            "ci95_high": 0.2968168394441695
+          },
+          "mrr": {
+            "mean": 0.13333333333333333,
+            "ci95_low": 0.009609750681461499,
+            "ci95_high": 0.2570569159852052
+          }
+        },
+        "zero": {
+          "recall_at_1": {
+            "numerator": 8,
+            "denominator": 30,
+            "rate": 0.26666666666666666,
+            "ci95_low": 0.14182495553910618,
+            "ci95_high": 0.4444830204431169
+          },
+          "recall_at_k": {
+            "numerator": 8,
+            "denominator": 30,
+            "rate": 0.26666666666666666,
+            "ci95_low": 0.14182495553910618,
+            "ci95_high": 0.4444830204431169
+          },
+          "mrr": {
+            "mean": 0.26666666666666666,
+            "ci95_low": 0.10571623285055709,
+            "ci95_high": 0.42761710048277624
+          }
+        }
+      },
+      "failure_decomposition": {
+        "target_never_observed": 8,
+        "target_observed_not_mode_identified": 0,
+        "mode_identified": 22
+      },
+      "negative_control": {
+        "distinct_arrays": {
+          "mean": 3461.4,
+          "ci95_low": 3213.366183339319,
+          "ci95_high": 3709.4338166606813
+        },
+        "max_array_fraction": {
+          "mean": 0.109130859375,
+          "ci95_low": 0.051410007507646606,
+          "ci95_high": 0.1668517112423534
+        }
+      }
+    },
+    {
+      "width": 8,
+      "parameters": 2704,
+      "trials": 30,
+      "memorization_success": {
+        "numerator": 30,
+        "denominator": 30,
+        "rate": 1.0,
+        "ci95_low": 0.8864829086095221,
+        "ci95_high": 1.0
+      },
+      "occurrence_models": {
+        "numerator": 14,
+        "denominator": 30,
+        "rate": 0.4666666666666667,
+        "ci95_low": 0.30232127224128236,
+        "ci95_high": 0.6385798671847496
+      },
+      "occurrence_fraction": {
+        "mean": 0.009147135416666667,
+        "ci95_low": 0.0037674515055464352,
+        "ci95_high": 0.014526819327786898
+      },
+      "distinct_arrays": {
+        "mean": 3939.233333333333,
+        "ci95_low": 3842.8609117011615,
+        "ci95_high": 4035.6057549655047
+      },
+      "distinct_patterns": {
+        "mean": 1257.2666666666667,
+        "ci95_low": 1169.6449005588852,
+        "ci95_high": 1344.8884327744481
+      },
+      "runtime_seconds": {
+        "mean": 0.05682757549996798,
+        "ci95_low": 0.055471034571322804,
+        "ci95_high": 0.05818411642861316
+      },
+      "methods": {
+        "mode": {
+          "recall_at_1": {
+            "numerator": 14,
+            "denominator": 30,
+            "rate": 0.4666666666666667,
+            "ci95_low": 0.30232127224128236,
+            "ci95_high": 0.6385798671847496
+          },
+          "recall_at_k": {
+            "numerator": 14,
+            "denominator": 30,
+            "rate": 0.4666666666666667,
+            "ci95_low": 0.30232127224128236,
+            "ci95_high": 0.6385798671847496
+          },
+          "mrr": {
+            "mean": 0.4666666666666667,
+            "ci95_low": 0.28509008877225117,
+            "ci95_high": 0.6482432445610822
+          }
+        },
+        "median_medoid": {
+          "recall_at_1": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "recall_at_k": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "mrr": {
+            "mean": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0
+          }
+        },
+        "local_stability": {
+          "recall_at_1": {
+            "numerator": 13,
+            "denominator": 30,
+            "rate": 0.43333333333333335,
+            "ci95_low": 0.2737723743061511,
+            "ci95_high": 0.6080299045459127
+          },
+          "recall_at_k": {
+            "numerator": 14,
+            "denominator": 30,
+            "rate": 0.4666666666666667,
+            "ci95_low": 0.30232127224128236,
+            "ci95_high": 0.6385798671847496
+          },
+          "mrr": {
+            "mean": 0.44,
+            "ci95_low": 0.26129954685557455,
+            "ci95_high": 0.6187004531444255
+          }
+        },
+        "analytic_moment": {
+          "recall_at_1": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "recall_at_k": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "mrr": {
+            "mean": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0
+          }
+        },
+        "random_first": {
+          "recall_at_1": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "recall_at_k": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "mrr": {
+            "mean": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0
+          }
+        },
+        "zero": {
+          "recall_at_1": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "recall_at_k": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "mrr": {
+            "mean": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0
+          }
+        }
+      },
+      "failure_decomposition": {
+        "target_never_observed": 16,
+        "target_observed_not_mode_identified": 0,
+        "mode_identified": 14
+      },
+      "negative_control": {
+        "distinct_arrays": {
+          "mean": 4067.6666666666665,
+          "ci95_low": 4051.0322409498826,
+          "ci95_high": 4084.3010923834504
+        },
+        "max_array_fraction": {
+          "mean": 0.0051920572916666664,
+          "ci95_low": 0.0027845724491363665,
+          "ci95_high": 0.007599542134196967
+        }
+      }
+    },
+    {
+      "width": 16,
+      "parameters": 5472,
+      "trials": 30,
+      "memorization_success": {
+        "numerator": 30,
+        "denominator": 30,
+        "rate": 1.0,
+        "ci95_low": 0.8864829086095221,
+        "ci95_high": 1.0
+      },
+      "occurrence_models": {
+        "numerator": 1,
+        "denominator": 30,
+        "rate": 0.03333333333333333,
+        "ci95_low": 0.0059084379948573795,
+        "ci95_high": 0.16670751396958874
+      },
+      "occurrence_fraction": {
+        "mean": 1.6276041666666666e-05,
+        "ci95_low": -1.5624999999999997e-05,
+        "ci95_high": 4.8177083333333326e-05
+      },
+      "distinct_arrays": {
+        "mean": 4095.8333333333335,
+        "ci95_low": 4095.6976923829056,
+        "ci95_high": 4095.9689742837613
+      },
+      "distinct_patterns": {
+        "mean": 3982.5,
+        "ci95_low": 3938.1110767156397,
+        "ci95_high": 4026.8889232843603
+      },
+      "runtime_seconds": {
+        "mean": 0.06662010326399467,
+        "ci95_low": 0.06387903581358723,
+        "ci95_high": 0.06936117071440212
+      },
+      "methods": {
+        "mode": {
+          "recall_at_1": {
+            "numerator": 1,
+            "denominator": 30,
+            "rate": 0.03333333333333333,
+            "ci95_low": 0.0059084379948573795,
+            "ci95_high": 0.16670751396958874
+          },
+          "recall_at_k": {
+            "numerator": 1,
+            "denominator": 30,
+            "rate": 0.03333333333333333,
+            "ci95_low": 0.0059084379948573795,
+            "ci95_high": 0.16670751396958874
+          },
+          "mrr": {
+            "mean": 0.03333333333333333,
+            "ci95_low": -0.031999999999999994,
+            "ci95_high": 0.09866666666666665
+          }
+        },
+        "median_medoid": {
+          "recall_at_1": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "recall_at_k": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "mrr": {
+            "mean": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0
+          }
+        },
+        "local_stability": {
+          "recall_at_1": {
+            "numerator": 1,
+            "denominator": 30,
+            "rate": 0.03333333333333333,
+            "ci95_low": 0.0059084379948573795,
+            "ci95_high": 0.16670751396958874
+          },
+          "recall_at_k": {
+            "numerator": 1,
+            "denominator": 30,
+            "rate": 0.03333333333333333,
+            "ci95_low": 0.0059084379948573795,
+            "ci95_high": 0.16670751396958874
+          },
+          "mrr": {
+            "mean": 0.03333333333333333,
+            "ci95_low": -0.031999999999999994,
+            "ci95_high": 0.09866666666666665
+          }
+        },
+        "analytic_moment": {
+          "recall_at_1": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "recall_at_k": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "mrr": {
+            "mean": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0
+          }
+        },
+        "random_first": {
+          "recall_at_1": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "recall_at_k": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "mrr": {
+            "mean": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0
+          }
+        },
+        "zero": {
+          "recall_at_1": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "recall_at_k": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "mrr": {
+            "mean": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0
+          }
+        }
+      },
+      "failure_decomposition": {
+        "target_never_observed": 29,
+        "target_observed_not_mode_identified": 0,
+        "mode_identified": 1
+      },
+      "negative_control": {
+        "distinct_arrays": {
+          "mean": 4096.0,
+          "ci95_low": 4096.0,
+          "ci95_high": 4096.0
+        },
+        "max_array_fraction": {
+          "mean": 0.000244140625,
+          "ci95_low": 0.000244140625,
+          "ci95_high": 0.000244140625
+        }
+      }
+    },
+    {
+      "width": 32,
+      "parameters": 11392,
+      "trials": 30,
+      "memorization_success": {
+        "numerator": 30,
+        "denominator": 30,
+        "rate": 1.0,
+        "ci95_low": 0.8864829086095221,
+        "ci95_high": 1.0
+      },
+      "occurrence_models": {
+        "numerator": 0,
+        "denominator": 30,
+        "rate": 0.0,
+        "ci95_low": -1.3877787807814457e-17,
+        "ci95_high": 0.113517091390478
+      },
+      "occurrence_fraction": {
+        "mean": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "distinct_arrays": {
+        "mean": 4096.0,
+        "ci95_low": 4096.0,
+        "ci95_high": 4096.0
+      },
+      "distinct_patterns": {
+        "mean": 4096.0,
+        "ci95_low": 4096.0,
+        "ci95_high": 4096.0
+      },
+      "runtime_seconds": {
+        "mean": 0.07716047463278906,
+        "ci95_low": 0.06472101385043924,
+        "ci95_high": 0.08959993541513889
+      },
+      "methods": {
+        "mode": {
+          "recall_at_1": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "recall_at_k": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "mrr": {
+            "mean": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0
+          }
+        },
+        "median_medoid": {
+          "recall_at_1": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "recall_at_k": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "mrr": {
+            "mean": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0
+          }
+        },
+        "local_stability": {
+          "recall_at_1": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "recall_at_k": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "mrr": {
+            "mean": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0
+          }
+        },
+        "analytic_moment": {
+          "recall_at_1": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "recall_at_k": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "mrr": {
+            "mean": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0
+          }
+        },
+        "random_first": {
+          "recall_at_1": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "recall_at_k": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "mrr": {
+            "mean": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0
+          }
+        },
+        "zero": {
+          "recall_at_1": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "recall_at_k": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "mrr": {
+            "mean": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0
+          }
+        }
+      },
+      "failure_decomposition": {
+        "target_never_observed": 30,
+        "target_observed_not_mode_identified": 0,
+        "mode_identified": 0
+      },
+      "negative_control": {
+        "distinct_arrays": {
+          "mean": 4096.0,
+          "ci95_low": 4096.0,
+          "ci95_high": 4096.0
+        },
+        "max_array_fraction": {
+          "mean": 0.000244140625,
+          "ci95_low": 0.000244140625,
+          "ci95_high": 0.000244140625
+        }
+      }
+    },
+    {
+      "width": 64,
+      "parameters": 24768,
+      "trials": 30,
+      "memorization_success": {
+        "numerator": 30,
+        "denominator": 30,
+        "rate": 1.0,
+        "ci95_low": 0.8864829086095221,
+        "ci95_high": 1.0
+      },
+      "occurrence_models": {
+        "numerator": 0,
+        "denominator": 30,
+        "rate": 0.0,
+        "ci95_low": -1.3877787807814457e-17,
+        "ci95_high": 0.113517091390478
+      },
+      "occurrence_fraction": {
+        "mean": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "distinct_arrays": {
+        "mean": 4096.0,
+        "ci95_low": 4096.0,
+        "ci95_high": 4096.0
+      },
+      "distinct_patterns": {
+        "mean": 4096.0,
+        "ci95_low": 4096.0,
+        "ci95_high": 4096.0
+      },
+      "runtime_seconds": {
+        "mean": 0.0756698587317563,
+        "ci95_low": 0.07394124488736177,
+        "ci95_high": 0.07739847257615083
+      },
+      "methods": {
+        "mode": {
+          "recall_at_1": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "recall_at_k": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "mrr": {
+            "mean": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0
+          }
+        },
+        "median_medoid": {
+          "recall_at_1": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "recall_at_k": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "mrr": {
+            "mean": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0
+          }
+        },
+        "local_stability": {
+          "recall_at_1": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "recall_at_k": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "mrr": {
+            "mean": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0
+          }
+        },
+        "analytic_moment": {
+          "recall_at_1": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "recall_at_k": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "mrr": {
+            "mean": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0
+          }
+        },
+        "random_first": {
+          "recall_at_1": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "recall_at_k": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "mrr": {
+            "mean": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0
+          }
+        },
+        "zero": {
+          "recall_at_1": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "recall_at_k": {
+            "numerator": 0,
+            "denominator": 30,
+            "rate": 0.0,
+            "ci95_low": -1.3877787807814457e-17,
+            "ci95_high": 0.113517091390478
+          },
+          "mrr": {
+            "mean": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0
+          }
+        }
+      },
+      "failure_decomposition": {
+        "target_never_observed": 30,
+        "target_observed_not_mode_identified": 0,
+        "mode_identified": 0
+      },
+      "negative_control": {
+        "distinct_arrays": {
+          "mean": 4096.0,
+          "ci95_low": 4096.0,
+          "ci95_high": 4096.0
+        },
+        "max_array_fraction": {
+          "mean": 0.000244140625,
+          "ci95_low": 0.000244140625,
+          "ci95_high": 0.000244140625
+        }
+      }
+    }
+  ],
+  "pilot_trials": 15
+}
