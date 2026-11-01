@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="912" height="356" viewBox="0 0 912 356" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+<rect width="100%" height="100%" fill="#fcfcfb"/>
+<text x="16" y="26" font-size="16" font-weight="600" fill="#0b0b0b">Whole unknown array recovered</text>
+<text x="16" y="46" font-size="12" fill="#52514e">Share of model × draw pairs; Wilson 95% interval in each point's tooltip</text>
+<line x1="16" x2="38" y1="70" y2="70" stroke="#2a78d6" stroke-width="2"/>
+<text x="44" y="74" font-size="11" fill="#0b0b0b">input fit</text>
+<line x1="111.80000000000001" x2="133.8" y1="70" y2="70" stroke="#eb6834" stroke-width="2"/>
+<text x="139.8" y="74" font-size="11" fill="#0b0b0b">plane fit</text>
+<line x1="207.60000000000002" x2="229.60000000000002" y1="70" y2="70" stroke="#1baf7a" stroke-width="2"/>
+<text x="235.60000000000002" y="74" font-size="11" fill="#0b0b0b">output mean (control)</text>
+<line x1="377.80000000000007" x2="399.80000000000007" y1="70" y2="70" stroke="#2a78d6" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="405.80000000000007" y="74" font-size="11" fill="#0b0b0b">input fit, wrong known values (control)</text>
+<text x="56" y="102" font-size="13" font-weight="600" fill="#0b0b0b">S = 1 (raw, control)</text>
+<line x1="56" x2="296" y1="292.0" y2="292.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="50" y="296.0" font-size="11" text-anchor="end" fill="#52514e">0%</text>
+<line x1="56" x2="296" y1="247.0" y2="247.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="50" y="251.0" font-size="11" text-anchor="end" fill="#52514e">25%</text>
+<line x1="56" x2="296" y1="202.0" y2="202.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="50" y="206.0" font-size="11" text-anchor="end" fill="#52514e">50%</text>
+<line x1="56" x2="296" y1="157.0" y2="157.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="50" y="161.0" font-size="11" text-anchor="end" fill="#52514e">75%</text>
+<line x1="56" x2="296" y1="112.0" y2="112.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="50" y="116.0" font-size="11" text-anchor="end" fill="#52514e">100%</text>
+<text x="68.0" y="308" font-size="11" text-anchor="middle" fill="#52514e">0</text>
+<text x="111.2" y="308" font-size="11" text-anchor="middle" fill="#52514e">4</text>
+<text x="154.4" y="308" font-size="11" text-anchor="middle" fill="#52514e">8</text>
+<text x="197.6" y="308" font-size="11" text-anchor="middle" fill="#52514e">16</text>
+<text x="240.8" y="308" font-size="11" text-anchor="middle" fill="#52514e">32</text>
+<text x="284.0" y="308" font-size="11" text-anchor="middle" fill="#52514e">64</text>
+<path d="M68.0,112.0 L111.2,112.0 L154.4,112.0 L197.6,112.0 L240.8,112.0 L284.0,112.0" fill="none" stroke="#2a78d6" stroke-width="2"/>
+<g><title>input fit | S = 1 (raw, control) | k=0 (blind PCA/lattice) | 100.0% (95% CI 88.6–100.0%), 30 models</title><circle cx="68.0" cy="112.0" r="9" fill="transparent"/><circle cx="68.0" cy="112.0" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>input fit | S = 1 (raw, control) | k=4 | 100.0% (95% CI 95.9–100.0%), 30 models</title><circle cx="111.2" cy="112.0" r="9" fill="transparent"/><circle cx="111.2" cy="112.0" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>input fit | S = 1 (raw, control) | k=8 | 100.0% (95% CI 95.9–100.0%), 30 models</title><circle cx="154.4" cy="112.0" r="9" fill="transparent"/><circle cx="154.4" cy="112.0" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>input fit | S = 1 (raw, control) | k=16 | 100.0% (95% CI 95.9–100.0%), 30 models</title><circle cx="197.6" cy="112.0" r="9" fill="transparent"/><circle cx="197.6" cy="112.0" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>input fit | S = 1 (raw, control) | k=32 | 100.0% (95% CI 95.9–100.0%), 30 models</title><circle cx="240.8" cy="112.0" r="9" fill="transparent"/><circle cx="240.8" cy="112.0" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>input fit | S = 1 (raw, control) | k=64 | 100.0% (95% CI 95.9–100.0%), 30 models</title><circle cx="284.0" cy="112.0" r="9" fill="transparent"/><circle cx="284.0" cy="112.0" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/></g>
+<path d="M68.0,112.0 L111.2,112.0 L154.4,112.0 L197.6,112.0 L240.8,112.0 L284.0,112.0" fill="none" stroke="#eb6834" stroke-width="2"/>
+<g><title>plane fit | S = 1 (raw, control) | k=0 (blind PCA/lattice) | 100.0% (95% CI 88.6–100.0%), 30 models</title><circle cx="68.0" cy="112.0" r="9" fill="transparent"/><circle cx="68.0" cy="112.0" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>plane fit | S = 1 (raw, control) | k=4 | 100.0% (95% CI 95.9–100.0%), 30 models</title><circle cx="111.2" cy="112.0" r="9" fill="transparent"/><circle cx="111.2" cy="112.0" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>plane fit | S = 1 (raw, control) | k=8 | 100.0% (95% CI 95.9–100.0%), 30 models</title><circle cx="154.4" cy="112.0" r="9" fill="transparent"/><circle cx="154.4" cy="112.0" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>plane fit | S = 1 (raw, control) | k=16 | 100.0% (95% CI 95.9–100.0%), 30 models</title><circle cx="197.6" cy="112.0" r="9" fill="transparent"/><circle cx="197.6" cy="112.0" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>plane fit | S = 1 (raw, control) | k=32 | 100.0% (95% CI 95.9–100.0%), 30 models</title><circle cx="240.8" cy="112.0" r="9" fill="transparent"/><circle cx="240.8" cy="112.0" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>plane fit | S = 1 (raw, control) | k=64 | 100.0% (95% CI 95.9–100.0%), 30 models</title><circle cx="284.0" cy="112.0" r="9" fill="transparent"/><circle cx="284.0" cy="112.0" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/></g>
+<path d="M68.0,292.0 L111.2,292.0 L154.4,292.0 L197.6,292.0 L240.8,292.0 L284.0,292.0" fill="none" stroke="#1baf7a" stroke-width="2"/>
+<g><title>output mean (control) | S = 1 (raw, control) | k=0 | 0.0% (95% CI 0.0–11.4%), 30 models</title><circle cx="68.0" cy="292.0" r="9" fill="transparent"/><circle cx="68.0" cy="292.0" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>output mean (control) | S = 1 (raw, control) | k=4 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="111.2" cy="292.0" r="9" fill="transparent"/><circle cx="111.2" cy="292.0" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>output mean (control) | S = 1 (raw, control) | k=8 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="154.4" cy="292.0" r="9" fill="transparent"/><circle cx="154.4" cy="292.0" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>output mean (control) | S = 1 (raw, control) | k=16 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="197.6" cy="292.0" r="9" fill="transparent"/><circle cx="197.6" cy="292.0" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>output mean (control) | S = 1 (raw, control) | k=32 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="240.8" cy="292.0" r="9" fill="transparent"/><circle cx="240.8" cy="292.0" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>output mean (control) | S = 1 (raw, control) | k=64 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="284.0" cy="292.0" r="9" fill="transparent"/><circle cx="284.0" cy="292.0" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/></g>
+<path d="M111.2,292.0 L154.4,292.0 L197.6,292.0 L240.8,292.0 L284.0,292.0" fill="none" stroke="#2a78d6" stroke-width="2" stroke-dasharray="6 4"/>
+<g><title>input fit, wrong known values (control) | S = 1 (raw, control) | k=4 | 0.0% (95% CI 0.0–11.4%), 30 models</title><circle cx="111.2" cy="292.0" r="9" fill="transparent"/><circle cx="111.2" cy="292.0" r="4" fill="#fcfcfb" stroke="#2a78d6" stroke-width="2"/></g>
+<g><title>input fit, wrong known values (control) | S = 1 (raw, control) | k=8 | 0.0% (95% CI 0.0–11.4%), 30 models</title><circle cx="154.4" cy="292.0" r="9" fill="transparent"/><circle cx="154.4" cy="292.0" r="4" fill="#fcfcfb" stroke="#2a78d6" stroke-width="2"/></g>
+<g><title>input fit, wrong known values (control) | S = 1 (raw, control) | k=16 | 0.0% (95% CI 0.0–11.4%), 30 models</title><circle cx="197.6" cy="292.0" r="9" fill="transparent"/><circle cx="197.6" cy="292.0" r="4" fill="#fcfcfb" stroke="#2a78d6" stroke-width="2"/></g>
+<g><title>input fit, wrong known values (control) | S = 1 (raw, control) | k=32 | 0.0% (95% CI 0.0–11.4%), 30 models</title><circle cx="240.8" cy="292.0" r="9" fill="transparent"/><circle cx="240.8" cy="292.0" r="4" fill="#fcfcfb" stroke="#2a78d6" stroke-width="2"/></g>
+<g><title>input fit, wrong known values (control) | S = 1 (raw, control) | k=64 | 0.0% (95% CI 0.0–11.4%), 30 models</title><circle cx="284.0" cy="292.0" r="9" fill="transparent"/><circle cx="284.0" cy="292.0" r="4" fill="#fcfcfb" stroke="#2a78d6" stroke-width="2"/></g>
+<text x="352" y="102" font-size="13" font-weight="600" fill="#0b0b0b">S = 4095</text>
+<line x1="352" x2="592" y1="292.0" y2="292.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="346" y="296.0" font-size="11" text-anchor="end" fill="#52514e">0%</text>
+<line x1="352" x2="592" y1="247.0" y2="247.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="346" y="251.0" font-size="11" text-anchor="end" fill="#52514e">25%</text>
+<line x1="352" x2="592" y1="202.0" y2="202.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="346" y="206.0" font-size="11" text-anchor="end" fill="#52514e">50%</text>
+<line x1="352" x2="592" y1="157.0" y2="157.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="346" y="161.0" font-size="11" text-anchor="end" fill="#52514e">75%</text>
+<line x1="352" x2="592" y1="112.0" y2="112.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="346" y="116.0" font-size="11" text-anchor="end" fill="#52514e">100%</text>
+<text x="364.0" y="308" font-size="11" text-anchor="middle" fill="#52514e">0</text>
+<text x="407.2" y="308" font-size="11" text-anchor="middle" fill="#52514e">4</text>
+<text x="450.4" y="308" font-size="11" text-anchor="middle" fill="#52514e">8</text>
+<text x="493.6" y="308" font-size="11" text-anchor="middle" fill="#52514e">16</text>
+<text x="536.8" y="308" font-size="11" text-anchor="middle" fill="#52514e">32</text>
+<text x="580.0" y="308" font-size="11" text-anchor="middle" fill="#52514e">64</text>
+<path d="M364.0,292.0 L407.2,292.0 L450.4,292.0 L493.6,292.0 L536.8,292.0 L580.0,292.0" fill="none" stroke="#2a78d6" stroke-width="2"/>
+<g><title>input fit | S = 4095 | k=0 (blind PCA/lattice) | 0.0% (95% CI 0.0–11.4%), 30 models</title><circle cx="364.0" cy="292.0" r="9" fill="transparent"/><circle cx="364.0" cy="292.0" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>input fit | S = 4095 | k=4 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="407.2" cy="292.0" r="9" fill="transparent"/><circle cx="407.2" cy="292.0" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>input fit | S = 4095 | k=8 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="450.4" cy="292.0" r="9" fill="transparent"/><circle cx="450.4" cy="292.0" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>input fit | S = 4095 | k=16 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="493.6" cy="292.0" r="9" fill="transparent"/><circle cx="493.6" cy="292.0" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>input fit | S = 4095 | k=32 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="536.8" cy="292.0" r="9" fill="transparent"/><circle cx="536.8" cy="292.0" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>input fit | S = 4095 | k=64 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="580.0" cy="292.0" r="9" fill="transparent"/><circle cx="580.0" cy="292.0" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/></g>
+<path d="M364.0,292.0 L407.2,292.0 L450.4,292.0 L493.6,292.0 L536.8,292.0 L580.0,292.0" fill="none" stroke="#eb6834" stroke-width="2"/>
+<g><title>plane fit | S = 4095 | k=0 (blind PCA/lattice) | 0.0% (95% CI 0.0–11.4%), 30 models</title><circle cx="364.0" cy="292.0" r="9" fill="transparent"/><circle cx="364.0" cy="292.0" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>plane fit | S = 4095 | k=4 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="407.2" cy="292.0" r="9" fill="transparent"/><circle cx="407.2" cy="292.0" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>plane fit | S = 4095 | k=8 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="450.4" cy="292.0" r="9" fill="transparent"/><circle cx="450.4" cy="292.0" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>plane fit | S = 4095 | k=16 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="493.6" cy="292.0" r="9" fill="transparent"/><circle cx="493.6" cy="292.0" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>plane fit | S = 4095 | k=32 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="536.8" cy="292.0" r="9" fill="transparent"/><circle cx="536.8" cy="292.0" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>plane fit | S = 4095 | k=64 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="580.0" cy="292.0" r="9" fill="transparent"/><circle cx="580.0" cy="292.0" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/></g>
+<path d="M364.0,292.0 L407.2,292.0 L450.4,292.0 L493.6,292.0 L536.8,292.0 L580.0,292.0" fill="none" stroke="#1baf7a" stroke-width="2"/>
+<g><title>output mean (control) | S = 4095 | k=0 | 0.0% (95% CI 0.0–11.4%), 30 models</title><circle cx="364.0" cy="292.0" r="9" fill="transparent"/><circle cx="364.0" cy="292.0" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>output mean (control) | S = 4095 | k=4 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="407.2" cy="292.0" r="9" fill="transparent"/><circle cx="407.2" cy="292.0" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>output mean (control) | S = 4095 | k=8 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="450.4" cy="292.0" r="9" fill="transparent"/><circle cx="450.4" cy="292.0" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>output mean (control) | S = 4095 | k=16 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="493.6" cy="292.0" r="9" fill="transparent"/><circle cx="493.6" cy="292.0" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>output mean (control) | S = 4095 | k=32 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="536.8" cy="292.0" r="9" fill="transparent"/><circle cx="536.8" cy="292.0" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>output mean (control) | S = 4095 | k=64 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="580.0" cy="292.0" r="9" fill="transparent"/><circle cx="580.0" cy="292.0" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/></g>
+<path d="M407.2,292.0 L450.4,292.0 L493.6,292.0 L536.8,292.0 L580.0,292.0" fill="none" stroke="#2a78d6" stroke-width="2" stroke-dasharray="6 4"/>
+<g><title>input fit, wrong known values (control) | S = 4095 | k=4 | 0.0% (95% CI 0.0–11.4%), 30 models</title><circle cx="407.2" cy="292.0" r="9" fill="transparent"/><circle cx="407.2" cy="292.0" r="4" fill="#fcfcfb" stroke="#2a78d6" stroke-width="2"/></g>
+<g><title>input fit, wrong known values (control) | S = 4095 | k=8 | 0.0% (95% CI 0.0–11.4%), 30 models</title><circle cx="450.4" cy="292.0" r="9" fill="transparent"/><circle cx="450.4" cy="292.0" r="4" fill="#fcfcfb" stroke="#2a78d6" stroke-width="2"/></g>
+<g><title>input fit, wrong known values (control) | S = 4095 | k=16 | 0.0% (95% CI 0.0–11.4%), 30 models</title><circle cx="493.6" cy="292.0" r="9" fill="transparent"/><circle cx="493.6" cy="292.0" r="4" fill="#fcfcfb" stroke="#2a78d6" stroke-width="2"/></g>
+<g><title>input fit, wrong known values (control) | S = 4095 | k=32 | 0.0% (95% CI 0.0–11.4%), 30 models</title><circle cx="536.8" cy="292.0" r="9" fill="transparent"/><circle cx="536.8" cy="292.0" r="4" fill="#fcfcfb" stroke="#2a78d6" stroke-width="2"/></g>
+<g><title>input fit, wrong known values (control) | S = 4095 | k=64 | 0.0% (95% CI 0.0–11.4%), 30 models</title><circle cx="580.0" cy="292.0" r="9" fill="transparent"/><circle cx="580.0" cy="292.0" r="4" fill="#fcfcfb" stroke="#2a78d6" stroke-width="2"/></g>
+<text x="648" y="102" font-size="13" font-weight="600" fill="#0b0b0b">S = 10000</text>
+<line x1="648" x2="888" y1="292.0" y2="292.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="642" y="296.0" font-size="11" text-anchor="end" fill="#52514e">0%</text>
+<line x1="648" x2="888" y1="247.0" y2="247.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="642" y="251.0" font-size="11" text-anchor="end" fill="#52514e">25%</text>
+<line x1="648" x2="888" y1="202.0" y2="202.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="642" y="206.0" font-size="11" text-anchor="end" fill="#52514e">50%</text>
+<line x1="648" x2="888" y1="157.0" y2="157.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="642" y="161.0" font-size="11" text-anchor="end" fill="#52514e">75%</text>
+<line x1="648" x2="888" y1="112.0" y2="112.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="642" y="116.0" font-size="11" text-anchor="end" fill="#52514e">100%</text>
+<text x="660.0" y="308" font-size="11" text-anchor="middle" fill="#52514e">0</text>
+<text x="703.2" y="308" font-size="11" text-anchor="middle" fill="#52514e">4</text>
+<text x="746.4" y="308" font-size="11" text-anchor="middle" fill="#52514e">8</text>
+<text x="789.6" y="308" font-size="11" text-anchor="middle" fill="#52514e">16</text>
+<text x="832.8" y="308" font-size="11" text-anchor="middle" fill="#52514e">32</text>
+<text x="876.0" y="308" font-size="11" text-anchor="middle" fill="#52514e">64</text>
+<path d="M660.0,292.0 L703.2,292.0 L746.4,290.0 L789.6,220.0 L832.8,162.0 L876.0,164.0" fill="none" stroke="#2a78d6" stroke-width="2"/>
+<g><title>input fit | S = 10000 | k=0 (blind PCA/lattice) | 0.0% (95% CI 0.0–11.4%), 30 models</title><circle cx="660.0" cy="292.0" r="9" fill="transparent"/><circle cx="660.0" cy="292.0" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>input fit | S = 10000 | k=4 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="703.2" cy="292.0" r="9" fill="transparent"/><circle cx="703.2" cy="292.0" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>input fit | S = 10000 | k=8 | 1.1% (95% CI 0.2–6.0%), 30 models</title><circle cx="746.4" cy="290.0" r="9" fill="transparent"/><circle cx="746.4" cy="290.0" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>input fit | S = 10000 | k=16 | 40.0% (95% CI 30.5–50.3%), 30 models</title><circle cx="789.6" cy="220.0" r="9" fill="transparent"/><circle cx="789.6" cy="220.0" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>input fit | S = 10000 | k=32 | 72.2% (95% CI 62.2–80.4%), 30 models</title><circle cx="832.8" cy="162.0" r="9" fill="transparent"/><circle cx="832.8" cy="162.0" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>input fit | S = 10000 | k=64 | 71.1% (95% CI 61.0–79.5%), 30 models</title><circle cx="876.0" cy="164.0" r="9" fill="transparent"/><circle cx="876.0" cy="164.0" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/></g>
+<path d="M660.0,292.0 L703.2,292.0 L746.4,292.0 L789.6,292.0 L832.8,292.0 L876.0,292.0" fill="none" stroke="#eb6834" stroke-width="2"/>
+<g><title>plane fit | S = 10000 | k=0 (blind PCA/lattice) | 0.0% (95% CI 0.0–11.4%), 30 models</title><circle cx="660.0" cy="292.0" r="9" fill="transparent"/><circle cx="660.0" cy="292.0" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>plane fit | S = 10000 | k=4 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="703.2" cy="292.0" r="9" fill="transparent"/><circle cx="703.2" cy="292.0" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>plane fit | S = 10000 | k=8 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="746.4" cy="292.0" r="9" fill="transparent"/><circle cx="746.4" cy="292.0" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>plane fit | S = 10000 | k=16 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="789.6" cy="292.0" r="9" fill="transparent"/><circle cx="789.6" cy="292.0" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>plane fit | S = 10000 | k=32 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="832.8" cy="292.0" r="9" fill="transparent"/><circle cx="832.8" cy="292.0" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>plane fit | S = 10000 | k=64 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="876.0" cy="292.0" r="9" fill="transparent"/><circle cx="876.0" cy="292.0" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/></g>
+<path d="M660.0,292.0 L703.2,292.0 L746.4,292.0 L789.6,292.0 L832.8,292.0 L876.0,292.0" fill="none" stroke="#1baf7a" stroke-width="2"/>
+<g><title>output mean (control) | S = 10000 | k=0 | 0.0% (95% CI 0.0–11.4%), 30 models</title><circle cx="660.0" cy="292.0" r="9" fill="transparent"/><circle cx="660.0" cy="292.0" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>output mean (control) | S = 10000 | k=4 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="703.2" cy="292.0" r="9" fill="transparent"/><circle cx="703.2" cy="292.0" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>output mean (control) | S = 10000 | k=8 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="746.4" cy="292.0" r="9" fill="transparent"/><circle cx="746.4" cy="292.0" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>output mean (control) | S = 10000 | k=16 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="789.6" cy="292.0" r="9" fill="transparent"/><circle cx="789.6" cy="292.0" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>output mean (control) | S = 10000 | k=32 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="832.8" cy="292.0" r="9" fill="transparent"/><circle cx="832.8" cy="292.0" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>output mean (control) | S = 10000 | k=64 | 0.0% (95% CI 0.0–4.1%), 30 models</title><circle cx="876.0" cy="292.0" r="9" fill="transparent"/><circle cx="876.0" cy="292.0" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/></g>
+<path d="M703.2,292.0 L746.4,292.0 L789.6,292.0 L832.8,292.0 L876.0,292.0" fill="none" stroke="#2a78d6" stroke-width="2" stroke-dasharray="6 4"/>
+<g><title>input fit, wrong known values (control) | S = 10000 | k=4 | 0.0% (95% CI 0.0–11.4%), 30 models</title><circle cx="703.2" cy="292.0" r="9" fill="transparent"/><circle cx="703.2" cy="292.0" r="4" fill="#fcfcfb" stroke="#2a78d6" stroke-width="2"/></g>
+<g><title>input fit, wrong known values (control) | S = 10000 | k=8 | 0.0% (95% CI 0.0–11.4%), 30 models</title><circle cx="746.4" cy="292.0" r="9" fill="transparent"/><circle cx="746.4" cy="292.0" r="4" fill="#fcfcfb" stroke="#2a78d6" stroke-width="2"/></g>
+<g><title>input fit, wrong known values (control) | S = 10000 | k=16 | 0.0% (95% CI 0.0–11.4%), 30 models</title><circle cx="789.6" cy="292.0" r="9" fill="transparent"/><circle cx="789.6" cy="292.0" r="4" fill="#fcfcfb" stroke="#2a78d6" stroke-width="2"/></g>
+<g><title>input fit, wrong known values (control) | S = 10000 | k=32 | 0.0% (95% CI 0.0–11.4%), 30 models</title><circle cx="832.8" cy="292.0" r="9" fill="transparent"/><circle cx="832.8" cy="292.0" r="4" fill="#fcfcfb" stroke="#2a78d6" stroke-width="2"/></g>
+<g><title>input fit, wrong known values (control) | S = 10000 | k=64 | 0.0% (95% CI 0.0–11.4%), 30 models</title><circle cx="876.0" cy="292.0" r="9" fill="transparent"/><circle cx="876.0" cy="292.0" r="4" fill="#fcfcfb" stroke="#2a78d6" stroke-width="2"/></g>
+<text x="456" y="344" font-size="11" text-anchor="middle" fill="#52514e">known tokens k (of 256); k = 0 is the blind baseline (Phase 5A PCA/lattice). Coinciding lines hide each other: see tooltips or RESULTS.md</text>
+</svg>

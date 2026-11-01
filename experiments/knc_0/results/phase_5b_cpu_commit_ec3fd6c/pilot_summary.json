@@ -1,0 +1,43 @@
+{
+  "grid": [
+    {
+      "lr": 0.01,
+      "projection": "free",
+      "steps": 2000,
+      "restarts": 8
+    },
+    {
+      "lr": 0.01,
+      "projection": "sphere",
+      "steps": 2000,
+      "restarts": 8
+    },
+    {
+      "lr": 0.05,
+      "projection": "free",
+      "steps": 2000,
+      "restarts": 8
+    },
+    {
+      "lr": 0.05,
+      "projection": "sphere",
+      "steps": 2000,
+      "restarts": 8
+    }
+  ],
+  "mean_unknown_exact_by_setting": [
+    0.48857132189793473,
+    0.5179117241281219,
+    0.45644467912613085,
+    0.5679930448882062
+  ],
+  "chosen_index": 3,
+  "chosen": {
+    "lr": 0.05,
+    "projection": "sphere",
+    "steps": 2000,
+    "restarts": 8
+  },
+  "pilot_models_per_scale": 3,
+  "frozen_before_heldout": true
+}

@@ -1,0 +1,65 @@
+{
+  "out": "/tmp/claude-0/-home-user/a50546e7-6d3c-56ed-82a5-5d4ad1307008/scratchpad/knc5b_ec3fd6c",
+  "trials": 30,
+  "pilot_trials": 3,
+  "draws": 3,
+  "input_dim": 384,
+  "output_dim": 256,
+  "lr": 0.01,
+  "max_steps": 5000,
+  "check_every": 10,
+  "probes": 1024,
+  "attack_steps": 2000,
+  "restarts": 8,
+  "seed": 54000,
+  "threads": 4,
+  "quiet": false,
+  "scales": {
+    "S1": 1.0,
+    "S4095": 4095.0,
+    "S10000": 10000.0
+  },
+  "primary_scales": [
+    "S4095",
+    "S10000"
+  ],
+  "k_values": [
+    0,
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "k_diagnostic": 256,
+  "pilot_grid": [
+    {
+      "lr": 0.01,
+      "projection": "free"
+    },
+    {
+      "lr": 0.01,
+      "projection": "sphere"
+    },
+    {
+      "lr": 0.05,
+      "projection": "free"
+    },
+    {
+      "lr": 0.05,
+      "projection": "sphere"
+    }
+  ],
+  "stopping_rule": "R2",
+  "hidden_dim": 320,
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39",
+    "torch": "2.15.0+cu132",
+    "numpy": "2.5.4",
+    "device": "cpu",
+    "cpu_count": 4,
+    "git_revision": "ec3fd6c70990c6e3ec3b39288483612f2a36321d"
+  },
+  "git_revision": "ec3fd6c70990c6e3ec3b39288483612f2a36321d"
+}
