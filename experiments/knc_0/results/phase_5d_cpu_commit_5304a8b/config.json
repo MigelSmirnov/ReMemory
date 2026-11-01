@@ -1,0 +1,38 @@
+{
+  "out": "/tmp/claude-0/-home-user/a50546e7-6d3c-56ed-82a5-5d4ad1307008/scratchpad/knc5d_5304a8b",
+  "trials": 20,
+  "max_steps": 5000,
+  "probes": 1024,
+  "attack_steps": 2000,
+  "seed": 63000,
+  "threads": 4,
+  "quiet": false,
+  "variants": {
+    "V1_S4095_adam1e-2": 4095.0,
+    "V2_S10000_adam1e-2": 10000.0,
+    "V3_S10000_adam1e-3": 10000.0,
+    "V4_S10000_sgd": 10000.0
+  },
+  "optimizers": {
+    "V1": "Adam 1e-2",
+    "V2": "Adam 1e-2",
+    "V3": "Adam 1e-3",
+    "V4": "SGD 0.1 m0.9"
+  },
+  "k_values": [
+    16,
+    64
+  ],
+  "readable_threshold": 0.5,
+  "stopping_rule": "token MSE <= 1e-5",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39",
+    "torch": "2.15.0+cu132",
+    "numpy": "2.5.4",
+    "device": "cpu",
+    "cpu_count": 4,
+    "git_revision": "5304a8be5559c0404f23ff797cc7c6cfd82952ed"
+  },
+  "git_revision": "5304a8be5559c0404f23ff797cc7c6cfd82952ed"
+}
