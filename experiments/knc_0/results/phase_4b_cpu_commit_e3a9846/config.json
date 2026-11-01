@@ -1,0 +1,40 @@
+{
+  "out": "/tmp/knc4b_commit_e3a9846",
+  "widths": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "output_lengths": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    64
+  ],
+  "trials": 30,
+  "samples": 512,
+  "epochs": 5000,
+  "check_every": 100,
+  "lr": 0.01,
+  "threads": 2,
+  "seed": 43000,
+  "probe_seed": 44000,
+  "environment": {
+    "python": "3.12.3",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+    "torch": "2.15.0+cpu",
+    "numpy": "2.5.4",
+    "device": "cpu",
+    "cpu_count": 8,
+    "git_revision": "e3a984683f76d9ba3c0338ad1b46e08b2271d16b"
+  },
+  "constant_threshold": {
+    "per_coordinate_token_std_max": 1.0,
+    "dominant_fraction_min": 0.99,
+    "array_rule": "all coordinates"
+  },
+  "secret_generation": "OS CSPRNG; entropy not persisted"
+}
