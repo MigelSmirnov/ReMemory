@@ -52,14 +52,17 @@ def train(x, tokens, scale, rule, init_seed, args):
         loss = nn.functional.mse_loss(out, target)
         loss.backward()
         opt.step()
-        if rule == "R1":
-            if step % args.check_every == 0:
-                with torch.no_grad():
-                    reached = torch.equal(to_tokens(model(x), scale), tokens)
-        elif rule == "R2":
-            reached = float(loss) * scale * scale <= 1e-5
-        else:  # R3
-            reached = float(loss) <= 1e-5
+        # Rules are checked on the post-step model, i.e. the model that is saved.
+        if rule == "R1" and step % args.check_every != 0:
+            continue
+        with torch.no_grad():
+            after = model(x)
+            if rule == "R1":
+                reached = torch.equal(to_tokens(after, scale), tokens)
+            elif rule == "R2":
+                reached = float(((after * scale - tokens.float()) ** 2).mean()) <= 1e-5
+            else:  # R3
+                reached = float(nn.functional.mse_loss(after, target)) <= 1e-5
         if reached:
             break
     model.eval()
@@ -134,7 +137,8 @@ def attack(public, n_probes, probe_seed):
     return {"tokens": np.clip(np.round(full), 0, 4095).astype(int),
             "accept": bool(frac.max() < ACCEPT_MAX_FRAC and in_range),
             "rms_pc": rms[:5].tolist(), "offplane_rms": float(math.sqrt((rms[2:] ** 2).sum())),
-            "max_frac": float(frac.max()), "best_score": best, "runner_up_score": runner_up,
+            "max_frac": float(frac.max()), "zero_fraction": float((np.round(full) == 0).mean()),
+            "best_score": best, "runner_up_score": runner_up,
             "plane": (mu, basis), "attack_seconds": time.perf_counter() - start}
 
 
@@ -169,7 +173,7 @@ def run_trial(trial, rules, args, pilot):
                           args.probe_seed + trial + (100000 if pilot else 0))
             ev = evaluate(model, scale, x, tokens, cand)
             row = {"pilot": pilot, "trial": trial, "rule": rule, "model": name, "scale": scale, **tr, **ev,
-                   "accept": cand["accept"], "max_frac": cand["max_frac"],
+                   "accept": cand["accept"], "max_frac": cand["max_frac"], "zero_fraction": cand["zero_fraction"],
                    "best_score": cand["best_score"], "runner_up_score": cand["runner_up_score"],
                    "offplane_rms": cand["offplane_rms"], "attack_seconds": cand["attack_seconds"],
                    **{f"rms_pc{i + 1}": v for i, v in enumerate(cand["rms_pc"])}}
@@ -205,7 +209,7 @@ def aggregate(rows):
                 k = sum(r[key] for r in sel)
                 entry[key] = {"k": k, "n": n, "rate": k / n, "wilson95": wilson(k, n)}
             for key in ("steps", "token_mse", "offplane_rms", "target_plane_resid_max", "max_frac",
-                        "exact_fraction", "rms_pc1", "rms_pc2", "rms_pc3", "train_seconds", "attack_seconds"):
+                        "exact_fraction", "zero_fraction", "rms_pc1", "rms_pc2", "rms_pc3", "train_seconds", "attack_seconds"):
                 v = np.array([r[key] for r in sel], dtype=float)
                 entry[key] = {"mean": float(v.mean()), "min": float(v.min()),
                               "median": float(np.median(v)), "max": float(v.max())}
