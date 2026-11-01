@@ -125,3 +125,28 @@ by 3 scratch models outside the experiment. No held-out data had been produced.
 
 Criteria 1 and 2, all budgets, thresholds and the analyst methods of the original
 methodology are unchanged.
+
+## Amendment 2 — reduced scope (owner decision, 2026-11-01)
+
+The full protocol (~75 CPU minutes) was stopped by the owner before any held-out
+model was evaluated; one aborted pilot attempt produced no stored data. Phase 5C is
+reduced to a single test of amendment 1's mechanism:
+
+- 30 fresh paired trials (S=4095 and S=10000 share secret and initialization),
+  trained exactly as above (R2, cap 5,000 steps).
+- Analyst: `dead_l1` only — `S·(W3·relu(b2) + b3)` from public weights, no input
+  and no known tokens.
+- Evaluator: memorization from the key, first- and second-layer active units at the
+  key, whether the first layer is fully inactive, and the candidate's exact fraction,
+  full recovery, MAE and within-64 accuracy.
+- Reported: Wilson 95% intervals for full recovery overall and split by whether the
+  key's first layer is fully inactive. The model is the unit; there are no draws.
+
+Not run: Experiments A–D (Jacobian spectra, observability `g`, Levenberg–Marquardt,
+trajectories, shuffled and wrong-value controls). The decision gate is therefore not
+evaluated, and no claim is made about whether local observability explains the
+Phase 5B known-token transition. A single exploratory run of the same test, done in
+the conversation before this amendment and not saved, gave S=10000 16/30 full
+recoveries (15/15 dead keys) and S=4095 0/30; it is reported as preliminary only.
+
+Runner: `experiments/knc_0/phase_5c_dead_l1.py`.

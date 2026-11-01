@@ -95,3 +95,14 @@ def test_lm_survives_zero_jacobian():
         model[0].bias.fill_(-1e6)
     res = lm_fit(model, 4095.0, np.array([0, 1]), np.array([5.0, 9.0]), seed=1, iters=3)
     assert np.isfinite(res["known_mse"])
+
+
+def test_reduced_runner_smoke(tmp_path):
+    from experiments.knc_0.phase_5c_dead_l1 import aggregate, build_parser, run
+    args = build_parser().parse_args(["--out", str(tmp_path / "o"), "--trials", "1", "--input-dim", "12",
+                                      "--output-dim", "8", "--max-steps", "50", "--quiet"])
+    rows = run(args)
+    assert {r["scale"] for r in rows} == {"S4095", "S10000"}
+    assert not {"x", "tokens", "secret"} & set(rows[0])
+    agg = aggregate(rows)
+    assert agg["S10000"]["models"] == 1
