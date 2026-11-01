@@ -5,13 +5,19 @@ This is an isolated experiment. It does not modify the ReMemory training or reca
 ## Run
 
 ```bash
-pip install torch numpy
-python experiments/knc_0/run.py --epochs 5000 --probes 10000
+pip install torch numpy pytest
+python experiments/knc_0/run.py --trials 10 --epochs 5000 --probes 10000
+pytest -q tests/test_knc_0.py
 ```
 
 CPU is sufficient; do not rent a GPU yet.
 
-The script trains a 256 -> 64 -> 64 -> 64 ReLU MLP to memorize one mapping from a random input to 64 random 12-bit tokens (scaled to [0,1] for stable training). It saves `knc0_results/public/model.pt` and `config.json` without the input or target, then reloads the model to run cheap white-box probes.
+Each invocation creates an independent run directory containing per-seed reports,
+an aggregate JSON report, and a CSV summary. Use `--device cuda` only after CPU
+profiling; requesting unavailable CUDA fails explicitly. Public attacker artifacts
+contain architecture and final weights only—never the seed, secret input, or target.
+
+The script trains a 256 -> 64 -> 64 -> 64 ReLU MLP to memorize one mapping from a random input to 64 random 12-bit tokens (scaled to [0,1] for stable training). It saves each trial under `knc0_results/<run_id>/seed_<seed>/`; its `public/` directory contains `model.pt` and `config.json` without the input or target, then the runner reloads those public artifacts for the cheap white-box probes.
 
 The report includes exact token recovery and MAE for the correct key, zero input, one random input, average of random outputs, and last-layer bias. The "best_random_probe_oracle" metric is **not a realistic attacker method**: it uses the hidden target to pick the best of the random probes, solely as an evaluation upper bound.
 
