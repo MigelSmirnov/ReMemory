@@ -102,3 +102,26 @@ Run:
 python experiments/knc_0/phase_5c.py --out /tmp/knc5c
 pytest -q -p no:cacheprovider tests/test_knc_0_phase_5c.py
 ```
+
+## Amendment 1 (before any held-out model was trained)
+
+Prompted by the smoke test (1 pilot + 1 held-out trial, 1 draw; output discarded) and
+by 3 scratch models outside the experiment. No held-out data had been produced.
+
+1. **Constant first-layer region.** In the smoke test the S=10000 key had every
+   first-layer unit inactive, so `J = 0` at the key and the output there equals
+   `S·(W3·relu(b2) + b3)`. In 2 of 3 scratch S=10000 models this weight-only
+   expression reproduced the target exactly; in 3 of 3 S=4095 models it did not.
+   Added: the analyst candidate `dead_l1` (k=0, blind, weights only); per-layer
+   active-unit counts at the key, random inputs and candidates; and recovery rates
+   split by whether the key's first layer is fully inactive (`by_key_l1_dead`).
+2. **Linearity noise floor.** Successful candidates have unobservable gains near
+   1e-4, so the first-order prediction at ε=1e-3 is ~1e-7 token while float32
+   evaluation and ReLU flips move outputs by ~1e-2 token. A ratio of two values
+   below noise is meaningless. Criterion 3 now also counts a candidate as consistent
+   when both the predicted and the actual change are below 0.05 token.
+3. **Zero spectrum.** When σ₁ = 0 every rank statistic is 0 (previously the relative
+   thresholds counted all 256 zero singular values).
+
+Criteria 1 and 2, all budgets, thresholds and the analyst methods of the original
+methodology are unchanged.
