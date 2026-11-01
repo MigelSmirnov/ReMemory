@@ -1,0 +1,21 @@
+t=0 done 21s
+t=1 done 40s
+t=2 done 59s
+t=3 done 77s
+t=4 done 96s
+t=5 done 117s
+t=6 done 137s
+t=7 done 157s
+t=8 done 175s
+t=9 done 194s
+t=10 done 214s
+t=11 done 233s
+t=12 done 252s
+t=13 done 272s
+t=14 done 291s
+
+S=10000, 15 paired secrets per optimizer
+adam_1e-2          rule 15/15 memorized 15/15 steps med 229 | key L1 dead 9/15 (L1 active med 0) | weights-only full 9/15 [0.36, 0.8] MAE med 0.0 | 64-known full 13/15 [0.62, 0.96] MAE med 0.0
+adam_1e-3          rule 15/15 memorized 15/15 steps med 249 | key L1 dead 0/15 (L1 active med 99) | weights-only full 0/15 [0.0, 0.2] MAE med 1430.2 | 64-known full 0/15 [0.0, 0.2] MAE med 15.4
+sgd_m0.9_0.1       rule 15/15 memorized 15/15 steps med 302 | key L1 dead 0/15 (L1 active med 130) | weights-only full 0/15 [0.0, 0.2] MAE med 571.8 | 64-known full 0/15 [0.0, 0.2] MAE med 22.6
+adamw_1e-2_wd1e-2  rule 0/15 memorized 3/15 steps med 5000 | key L1 dead 11/15 (L1 active med 0) | weights-only full 2/15 [0.04, 0.38] MAE med 1.7 | 64-known full 2/15 [0.04, 0.38] MAE med 2.2
