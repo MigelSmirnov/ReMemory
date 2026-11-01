@@ -48,11 +48,14 @@ It agrees with this run.
   models the memorized output is reproduced exactly from public weights in
   milliseconds. Phase 5B's blind result for S=10000 (0/30) holds only for the
   methods tested there (PCA/lattice and output mean), not for the model.
-- **Mechanism.** When the key's first layer is entirely inactive, the output in
-  that region is constant and equals `W3·relu(b2) + b3`. The memorized array is then
-  stored in the downstream weights and biases, independently of the input. Full
-  recovery happened if and only if the key's first layer was fully inactive (19/19
-  versus 0/41 across both scales).
+- **Mechanism.** When the key's first layer is entirely inactive, the output is
+  constant inside the region where all first-layer units stay inactive and equals
+  `W3·relu(b2) + b3` there. That expression contains only weights, so an analyst can
+  compute the memorized array without any input. The network's output still depends
+  on the input: the region is small, and inputs outside it give other outputs (see
+  the noise check below). The attack does not depend on the key; the model's output
+  does. Full recovery happened if and only if the key's first layer was fully
+  inactive (19/19 versus 0/41 across both scales).
 - **Near-inactive keys still leak approximately.** The 11 S=10000 models whose
   key kept 1–6 active first-layer units were not recovered exactly, but the same
   weight-only candidate was within ±64 tokens on the median model (median MAE 9.2).
@@ -65,6 +68,26 @@ It agrees with this run.
   smoke test before amendment 1 hinted at it (successful candidates had low-rank
   Jacobians and unobservable gain ≈ 1e-4), but those data were discarded and the
   experiments that would test it were cut.
+
+## Noise check (exploratory, not part of the protocol)
+
+Added after review to reconcile this result with the earliest observation that a
+small perturbation of the key destroys the output. One unsaved run on 12 fresh
+paired models (separate from the 30 above): inputs at a fixed cosine from the key
+(the key plus an orthogonal random direction, 8 directions per level), scored as
+the fraction of the 256 tokens correct. The table gives mean correct tokens.
+
+| Cosine to key | 1.0 | 0.999 | 0.99 | 0.95 | 0.9 | 0.8 | 0.5 |
+|---|---|---|---|---|---|---|---|
+| S=4095 (12 models) | 100% | 34% | 8% | 1% | 1% | 0% | 0% |
+| S=10000, key first layer inactive (8) | 100% | 98% | 49% | 15% | 8% | 5% | 2% |
+| S=10000, key first layer active (4) | 100% | 60% | 22% | 8% | 4% | 3% | 1% |
+
+All three groups are fragile around the key. The inactive region gives a little
+more tolerance (98% at cosine 0.999) but is still left at cosine 0.99. Fragility
+protects only against guessing the key; it does not protect against reading
+`W3·relu(b2) + b3` from the weights. The group sizes are small and the run was not
+saved; treat it as illustrative.
 
 ## Limitations
 
