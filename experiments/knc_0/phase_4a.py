@@ -252,6 +252,25 @@ def write_svg(configurations, metric_path, title, path):
     path.write_text(f'''<svg xmlns="http://www.w3.org/2000/svg" width="640" height="390"><rect width="100%" height="100%" fill="white"/><text x="320" y="25" text-anchor="middle" font-size="17">{title}</text><line x1="60" y1="330" x2="600" y2="330" stroke="black"/><line x1="60" y1="45" x2="60" y2="330" stroke="black"/>{"".join(content)}{labels}<text x="320" y="380" text-anchor="middle">hidden width</text></svg>''')
 
 
+def write_parameter_svg(configurations, metric_path, title, path):
+    values = []
+    for item in configurations:
+        value = item
+        for key in metric_path:
+            value = value[key]
+        values.append((item["parameter_count"], float(value), item["architecture"]))
+    min_log = math.log10(min(x[0] for x in values))
+    max_log = math.log10(max(x[0] for x in values))
+    max_y = max(x[1] for x in values) or 1
+    dots = []
+    for parameters, value, architecture in values:
+        x = 65 + 520 * (math.log10(parameters) - min_log) / (max_log - min_log)
+        y = 330 - 260 * value / max_y
+        color = "#2457c5" if architecture == "mlp" else "#b22323"
+        dots.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="4" fill="{color}" opacity="0.8"/>')
+    path.write_text(f'''<svg xmlns="http://www.w3.org/2000/svg" width="640" height="390"><rect width="100%" height="100%" fill="white"/><text x="320" y="25" text-anchor="middle" font-size="17">{title}</text><line x1="60" y1="330" x2="600" y2="330" stroke="black"/><line x1="60" y1="45" x2="60" y2="330" stroke="black"/>{"".join(dots)}<text x="320" y="380" text-anchor="middle">parameter count (log scale)</text><text x="500" y="50" fill="#2457c5">MLP</text><text x="500" y="70" fill="#b22323">linear</text></svg>''')
+
+
 def main(args):
     torch.set_num_threads(args.threads)
     output = Path(args.out)
@@ -279,8 +298,9 @@ def main(args):
     configurations = result["configurations"]
     write_svg(configurations, ["exact_memorization", "rate"], "Exact memorization vs width", output / "exact_vs_width.svg")
     write_svg(configurations, ["random_mean_absolute_error", "mean"], "Random-mean error vs width", output / "error_vs_width.svg")
-    write_svg(configurations, ["elapsed_seconds", "mean"], "Runtime vs width", output / "runtime_vs_width.svg")
-    write_svg(configurations, ["model_bytes", "mean"], "Serialized size vs width", output / "size_vs_width.svg")
+    write_parameter_svg(configurations, ["random_mean_absolute_error", "mean"], "Random-mean error vs parameters", output / "error_vs_parameters.svg")
+    write_parameter_svg(configurations, ["elapsed_seconds", "mean"], "Runtime vs parameters", output / "runtime_vs_parameters.svg")
+    write_parameter_svg(configurations, ["model_bytes", "mean"], "Serialized size vs parameters", output / "size_vs_parameters.svg")
     print(json.dumps({"total_runs": len(rows), "transitions": result["descriptive_transition_width_95pct"]}, indent=2))
 
 
