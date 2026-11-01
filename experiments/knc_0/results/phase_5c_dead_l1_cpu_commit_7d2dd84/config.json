@@ -1,0 +1,30 @@
+{
+  "out": "/tmp/claude-0/-home-user/a50546e7-6d3c-56ed-82a5-5d4ad1307008/scratchpad/knc5c_dead_7d2dd84",
+  "trials": 30,
+  "input_dim": 384,
+  "output_dim": 256,
+  "lr": 0.01,
+  "max_steps": 5000,
+  "check_every": 10,
+  "seed": 58000,
+  "threads": 4,
+  "quiet": true,
+  "scales": {
+    "S4095": 4095.0,
+    "S10000": 10000.0
+  },
+  "stopping_rule": "R2",
+  "hidden_dim": 320,
+  "analyst": "S*(W3*relu(b2)+b3), weights only",
+  "amendment": "PHASE_5C_METHOD.md#amendment-2",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39",
+    "torch": "2.15.0+cu132",
+    "numpy": "2.5.4",
+    "device": "cpu",
+    "cpu_count": 4,
+    "git_revision": "7d2dd841f7b943b4996cf9246fde85224d1d11c0"
+  },
+  "git_revision": "7d2dd841f7b943b4996cf9246fde85224d1d11c0"
+}

@@ -1,0 +1,166 @@
+{
+  "S4095": {
+    "models": 30,
+    "memorized": {
+      "k": 30,
+      "n": 30,
+      "wilson95": [
+        0.8864829086095221,
+        1.0
+      ]
+    },
+    "key_l1_dead": {
+      "k": 0,
+      "n": 30,
+      "wilson95": [
+        0.0,
+        0.113517091390478
+      ]
+    },
+    "full_recovery": {
+      "k": 0,
+      "n": 30,
+      "wilson95": [
+        0.0,
+        0.113517091390478
+      ]
+    },
+    "full_recovery_dead_keys": {
+      "k": 0,
+      "n": 0,
+      "wilson95": [
+        null,
+        null
+      ]
+    },
+    "full_recovery_alive_keys": {
+      "k": 0,
+      "n": 30,
+      "wilson95": [
+        0.0,
+        0.113517091390478
+      ]
+    },
+    "exact_fraction_median": 0.0,
+    "mae_median": 853.857421875,
+    "key_l1_active": {
+      "median": 50.5,
+      "min": 12,
+      "max": 62
+    },
+    "alive_key_partial": [
+      {
+        "key_l1_active": 54,
+        "exact_fraction": 0.00390625
+      },
+      {
+        "key_l1_active": 59,
+        "exact_fraction": 0.00390625
+      },
+      {
+        "key_l1_active": 39,
+        "exact_fraction": 0.00390625
+      }
+    ],
+    "attack_seconds_median": 0.0023660430000020938
+  },
+  "S10000": {
+    "models": 30,
+    "memorized": {
+      "k": 30,
+      "n": 30,
+      "wilson95": [
+        0.8864829086095221,
+        1.0
+      ]
+    },
+    "key_l1_dead": {
+      "k": 19,
+      "n": 30,
+      "wilson95": [
+        0.45513246433604937,
+        0.7812629779598231
+      ]
+    },
+    "full_recovery": {
+      "k": 19,
+      "n": 30,
+      "wilson95": [
+        0.45513246433604937,
+        0.7812629779598231
+      ]
+    },
+    "full_recovery_dead_keys": {
+      "k": 19,
+      "n": 19,
+      "wilson95": [
+        0.8318156346315496,
+        1.0
+      ]
+    },
+    "full_recovery_alive_keys": {
+      "k": 0,
+      "n": 11,
+      "wilson95": [
+        2.7755575615628914e-17,
+        0.2588400172488141
+      ]
+    },
+    "exact_fraction_median": 1.0,
+    "mae_median": 0.0,
+    "key_l1_active": {
+      "median": 0.0,
+      "min": 0,
+      "max": 6
+    },
+    "alive_key_partial": [
+      {
+        "key_l1_active": 2,
+        "exact_fraction": 0.01171875
+      },
+      {
+        "key_l1_active": 1,
+        "exact_fraction": 0.04296875
+      },
+      {
+        "key_l1_active": 6,
+        "exact_fraction": 0.0078125
+      },
+      {
+        "key_l1_active": 1,
+        "exact_fraction": 0.01953125
+      },
+      {
+        "key_l1_active": 1,
+        "exact_fraction": 0.01171875
+      },
+      {
+        "key_l1_active": 2,
+        "exact_fraction": 0.01953125
+      },
+      {
+        "key_l1_active": 1,
+        "exact_fraction": 0.0234375
+      },
+      {
+        "key_l1_active": 1,
+        "exact_fraction": 0.01953125
+      },
+      {
+        "key_l1_active": 3,
+        "exact_fraction": 0.0078125
+      },
+      {
+        "key_l1_active": 1,
+        "exact_fraction": 0.1328125
+      },
+      {
+        "key_l1_active": 1,
+        "exact_fraction": 0.00390625
+      }
+    ],
+    "attack_seconds_median": 0.0023410014999996065
+  },
+  "runtime_seconds": 25.765604187999998,
+  "peak_rss_bytes": 699301888
+}
