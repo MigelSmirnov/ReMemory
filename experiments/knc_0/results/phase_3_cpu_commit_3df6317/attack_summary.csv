@@ -1,0 +1,12 @@
+attack,budget,mean_mae_tokens,mean_exact_fraction,full_recoveries
+sparse_region,fixed,1284.36875,0.0,0
+phase3_2_gradient,10,1051.2109375,0.0,0
+phase3_2_gradient,50,1055.4890625,0.0015625,0
+phase3_2_gradient,200,892.1734375,0.0015625,0
+phase3_2_random,10,988.4140625,0.0015625,0
+phase3_2_random,50,1032.75,0.0,0
+phase3_2_random,200,1112.115625,0.0,0
+phase2_5_moment,parameter,480.5015625,0.0,0
+bias_only,parameter,1648.278125,0.0,0
+midpoint,parameter,1052.5578125,0.003125,0
+known_initialization_delta,parameter,1254.965625,0.0,0

@@ -1,0 +1,252 @@
+{
+  "trial": 7,
+  "pilot": false,
+  "training_seed": 41007,
+  "training": {
+    "steps": 300,
+    "seconds": 0.26372733199968934,
+    "final_loss": 7.586573591567003e-10,
+    "correct_key": {
+      "exact_fraction": 1.0,
+      "all_exact": true,
+      "mae_tokens": 0.0
+    }
+  },
+  "phase3_1_geometry": {
+    "distinct_patterns": 16,
+    "solution_count": 16,
+    "mean_input_norm": 16.06885528564453,
+    "std_input_norm": 0.04770740866661072,
+    "mean_active_fraction": 0.052734375,
+    "min_active_fraction": 0.015625,
+    "mean_local_output_std": 0.00047183225797198247,
+    "elapsed_seconds": 0.1529619850043673,
+    "forward_passes": 3200,
+    "backward_passes": 3200,
+    "selected_evaluation": {
+      "exact_fraction": 0.0,
+      "all_exact": false,
+      "mae_tokens": 1338.78125,
+      "rmse_tokens": 1583.1829833984375,
+      "within_1_fraction": 0.0,
+      "within_8_fraction": 0.0,
+      "within_64_fraction": 0.046875,
+      "input_cosine_evaluator_only": 0.16602283716201782,
+      "input_l2_evaluator_only": 20.396066665649414
+    },
+    "population_evaluation": {
+      "mean_mae_tokens": 924.255859375,
+      "mean_exact_fraction": 0.0009765625,
+      "mean_within_64_fraction": 0.0517578125,
+      "mean_input_cosine_evaluator_only": 0.24914420675486326
+    },
+    "matched_random_evaluation": {
+      "mean_mae_tokens": 907.2744140625,
+      "mean_exact_fraction": 0.0,
+      "mean_within_64_fraction": 0.044921875,
+      "mean_input_cosine_evaluator_only": 0.0235747640253976
+    }
+  },
+  "phase3_2_adaptive": {
+    "10": {
+      "exact_fraction": 0.0,
+      "all_exact": false,
+      "mae_tokens": 1157.578125,
+      "rmse_tokens": 1364.913330078125,
+      "within_1_fraction": 0.0,
+      "within_8_fraction": 0.015625,
+      "within_64_fraction": 0.015625,
+      "input_cosine_evaluator_only": 0.09247051179409027,
+      "input_l2_evaluator_only": 21.535724639892578
+    },
+    "50": {
+      "exact_fraction": 0.0,
+      "all_exact": false,
+      "mae_tokens": 1092.390625,
+      "rmse_tokens": 1291.242431640625,
+      "within_1_fraction": 0.0,
+      "within_8_fraction": 0.03125,
+      "within_64_fraction": 0.0625,
+      "input_cosine_evaluator_only": 0.029448796063661575,
+      "input_l2_evaluator_only": 22.28058624267578
+    },
+    "200": {
+      "exact_fraction": 0.0,
+      "all_exact": false,
+      "mae_tokens": 571.734375,
+      "rmse_tokens": 694.348388671875,
+      "within_1_fraction": 0.0,
+      "within_8_fraction": 0.0,
+      "within_64_fraction": 0.078125,
+      "input_cosine_evaluator_only": 0.15311722457408905,
+      "input_l2_evaluator_only": 20.635068893432617
+    }
+  },
+  "phase3_2_random_control": {
+    "10": {
+      "exact_fraction": 0.0,
+      "all_exact": false,
+      "mae_tokens": 1154.796875,
+      "rmse_tokens": 1378.3394775390625,
+      "within_1_fraction": 0.0,
+      "within_8_fraction": 0.0,
+      "within_64_fraction": 0.015625,
+      "input_cosine_evaluator_only": 0.0918232798576355,
+      "input_l2_evaluator_only": 21.088111877441406
+    },
+    "50": {
+      "exact_fraction": 0.0,
+      "all_exact": false,
+      "mae_tokens": 918.328125,
+      "rmse_tokens": 1093.7271728515625,
+      "within_1_fraction": 0.0,
+      "within_8_fraction": 0.0,
+      "within_64_fraction": 0.0625,
+      "input_cosine_evaluator_only": 0.09214317053556442,
+      "input_l2_evaluator_only": 20.97205924987793
+    },
+    "200": {
+      "exact_fraction": 0.0,
+      "all_exact": false,
+      "mae_tokens": 1069.40625,
+      "rmse_tokens": 1251.1444091796875,
+      "within_1_fraction": 0.0,
+      "within_8_fraction": 0.0,
+      "within_64_fraction": 0.0625,
+      "input_cosine_evaluator_only": 0.020361587405204773,
+      "input_l2_evaluator_only": 22.40463638305664
+    }
+  },
+  "phase3_2_observables": {
+    "10": {
+      "objective": 0.25593966245651245,
+      "lattice": 0.2296614944934845,
+      "output_range": 0.0021721229422837496,
+      "soft_active": 0.21618963778018951,
+      "prior": 0.0031493729911744595
+    },
+    "50": {
+      "objective": 0.25707483291625977,
+      "lattice": 0.21718263626098633,
+      "output_range": 0.00307651748880744,
+      "soft_active": 0.33412179350852966,
+      "prior": 0.00326991337351501
+    },
+    "200": {
+      "objective": 0.2266729772090912,
+      "lattice": 0.19052696228027344,
+      "output_range": 0.004393632989376783,
+      "soft_active": 0.2711489796638489,
+      "prior": 0.0024385610595345497
+    }
+  },
+  "phase3_2_random_observables": {
+    "10": {
+      "objective": 0.2545109689235687,
+      "lattice": 0.2212262749671936,
+      "output_range": 0.0012112825643271208,
+      "soft_active": 0.30470186471939087,
+      "prior": 0.003919295500963926
+    },
+    "50": {
+      "objective": 0.23644566535949707,
+      "lattice": 0.1994883418083191,
+      "output_range": 0.0029941019602119923,
+      "soft_active": 0.30301180481910706,
+      "prior": 0.006679360754787922
+    },
+    "200": {
+      "objective": 0.22040770947933197,
+      "lattice": 0.1810585856437683,
+      "output_range": 0.0012475777184590697,
+      "soft_active": 0.3625440299510956,
+      "prior": 0.005995618179440498
+    }
+  },
+  "phase3_2_runtime_seconds": {
+    "10": 0.01272607099963352,
+    "50": 0.0658492729999125,
+    "200": 0.26042964597581886
+  },
+  "phase3_2_random_runtime_seconds": {
+    "10": 0.0007394120038952678,
+    "50": 0.003731392993358895,
+    "200": 0.013052105001406744
+  },
+  "phase3_3_parameter": {
+    "phase2_5_moment": {
+      "exact_fraction": 0.0,
+      "all_exact": false,
+      "mae_tokens": 494.28125,
+      "rmse_tokens": 646.4339599609375,
+      "within_1_fraction": 0.0,
+      "within_8_fraction": 0.03125,
+      "within_64_fraction": 0.09375
+    },
+    "bias_only": {
+      "exact_fraction": 0.0,
+      "all_exact": false,
+      "mae_tokens": 1649.484375,
+      "rmse_tokens": 1926.457763671875,
+      "within_1_fraction": 0.0,
+      "within_8_fraction": 0.0,
+      "within_64_fraction": 0.0
+    },
+    "midpoint": {
+      "exact_fraction": 0.0,
+      "all_exact": false,
+      "mae_tokens": 925.703125,
+      "rmse_tokens": 1071.06201171875,
+      "within_1_fraction": 0.0,
+      "within_8_fraction": 0.0,
+      "within_64_fraction": 0.015625
+    },
+    "known_initialization_delta": {
+      "exact_fraction": 0.0,
+      "all_exact": false,
+      "mae_tokens": 1165.171875,
+      "rmse_tokens": 1465.11474609375,
+      "within_1_fraction": 0.0,
+      "within_8_fraction": 0.0,
+      "within_64_fraction": 0.0625
+    }
+  },
+  "phase3_3_resources": {
+    "elapsed_seconds": 0.0006523479823954403,
+    "forward_passes": 0,
+    "backward_passes": 0
+  },
+  "controls": {
+    "shuffled_training": {
+      "steps": 200,
+      "seconds": 0.183326792990556,
+      "final_loss": 5.190197160942489e-09,
+      "correct_key": {
+        "exact_fraction": 1.0,
+        "all_exact": true,
+        "mae_tokens": 0.0
+      }
+    },
+    "shuffled_adaptive": {
+      "exact_fraction": 0.0,
+      "all_exact": false,
+      "mae_tokens": 892.9375,
+      "rmse_tokens": 1040.2686767578125,
+      "within_1_fraction": 0.0,
+      "within_8_fraction": 0.0,
+      "within_64_fraction": 0.078125,
+      "input_cosine_evaluator_only": 0.09733086079359055,
+      "input_l2_evaluator_only": 21.43570899963379
+    },
+    "untrained_moment_vs_primary_target": {
+      "exact_fraction": 0.0,
+      "all_exact": false,
+      "mae_tokens": 1816.78125,
+      "rmse_tokens": 2112.133056640625,
+      "within_1_fraction": 0.0,
+      "within_8_fraction": 0.0,
+      "within_64_fraction": 0.015625
+    }
+  },
+  "peak_process_rss_bytes": 330219520
+}

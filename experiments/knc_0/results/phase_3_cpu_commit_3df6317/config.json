@@ -1,0 +1,32 @@
+{
+  "out": "/tmp/knc3_commit_3df6317",
+  "pilot_trials": 2,
+  "trials": 10,
+  "starts": 16,
+  "sparse_steps": 200,
+  "budgets": [
+    10,
+    50,
+    200
+  ],
+  "attack_lr": 0.03,
+  "input_dim": 256,
+  "hidden_dim": 64,
+  "output_dim": 64,
+  "epochs": 5000,
+  "check_every": 100,
+  "train_lr": 0.01,
+  "threads": 2,
+  "seed": 31000,
+  "environment": {
+    "python": "3.12.3",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+    "torch": "2.15.0+cpu",
+    "numpy": "2.5.4",
+    "device": "cpu",
+    "cpu_count": 8,
+    "git_revision": "3df631704b8b5aae10d63cf1660305f89e0b0ef2"
+  },
+  "secret_generation": "OS CSPRNG; entropy not persisted",
+  "frozen_before_heldout": true
+}

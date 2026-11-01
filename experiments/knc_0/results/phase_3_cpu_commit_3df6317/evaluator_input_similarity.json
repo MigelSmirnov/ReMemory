@@ -1,0 +1,16 @@
+{
+  "heldout_trials": 10,
+  "note": "Computed by the evaluator only after attacker candidates were frozen.",
+  "sparse_selected": {
+    "mean_input_cosine": 0.15744685605168343,
+    "mean_input_l2": 20.661988830566408
+  },
+  "gradient_budget_200": {
+    "mean_input_cosine": 0.10760905593633652,
+    "mean_input_l2": 21.647051429748537
+  },
+  "random_budget_200": {
+    "mean_input_cosine": 0.03327482519671321,
+    "mean_input_l2": 22.23019676208496
+  }
+}
