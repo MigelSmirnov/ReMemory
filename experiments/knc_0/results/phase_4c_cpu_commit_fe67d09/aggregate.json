@@ -1,0 +1,247 @@
+{
+  "configurations": [
+    {
+      "width": 1,
+      "trials": 30,
+      "training_success": {
+        "numerator": 30,
+        "denominator": 30,
+        "rate": 1.0,
+        "ci95_low": 0.8864829086095221,
+        "ci95_high": 1.0
+      },
+      "zero_full_recovery": {
+        "numerator": 19,
+        "denominator": 30,
+        "rate": 0.6333333333333333,
+        "ci95_low": 0.45513246433604937,
+        "ci95_high": 0.7812629779598231
+      },
+      "zero_exact_fraction": {
+        "mean": 0.6375,
+        "ci95_low": 0.4639641312665621,
+        "ci95_high": 0.8110358687334378
+      },
+      "distinct_patterns": {
+        "mean": 2.3333333333333335,
+        "ci95_low": 2.1617595943966292,
+        "ci95_high": 2.5049070722700377
+      },
+      "random_full_recovery": {
+        "mean": 0.59521484375,
+        "ci95_low": 0.48016276173656547,
+        "ci95_high": 0.7102669257634345
+      },
+      "zero_secret_pattern_agreement_evaluator_only": {
+        "numerator": 15,
+        "denominator": 30,
+        "rate": 0.5,
+        "ci95_low": 0.33153851227173764,
+        "ci95_high": 0.6684614877282624
+      },
+      "random_secret_pattern_agreement_evaluator_only": {
+        "mean": 0.44268391927083334,
+        "ci95_low": 0.39532206473155057,
+        "ci95_high": 0.4900457738101161
+      },
+      "mean_output_std": {
+        "mean": 0.0570412814617157,
+        "ci95_low": 0.03252521420848102,
+        "ci95_high": 0.08155734871495038
+      },
+      "explanations": {
+        "constant_region": 19,
+        "shared_pattern_nonconstant": 0,
+        "rounding_coincidence": 0,
+        "no_zero_recovery": 11
+      },
+      "models_with_constant_formal_region": 30
+    },
+    {
+      "width": 2,
+      "trials": 30,
+      "training_success": {
+        "numerator": 30,
+        "denominator": 30,
+        "rate": 1.0,
+        "ci95_low": 0.8864829086095221,
+        "ci95_high": 1.0
+      },
+      "zero_full_recovery": {
+        "numerator": 10,
+        "denominator": 30,
+        "rate": 0.3333333333333333,
+        "ci95_low": 0.19230295526846194,
+        "ci95_high": 0.5122027418616973
+      },
+      "zero_exact_fraction": {
+        "mean": 0.3453125,
+        "ci95_low": 0.17657062506256954,
+        "ci95_high": 0.5140543749374304
+      },
+      "distinct_patterns": {
+        "mean": 6.8,
+        "ci95_low": 6.173814613767588,
+        "ci95_high": 7.426185386232412
+      },
+      "random_full_recovery": {
+        "mean": 0.34954427083333334,
+        "ci95_low": 0.2603971648150891,
+        "ci95_high": 0.43869137685157755
+      },
+      "zero_secret_pattern_agreement_evaluator_only": {
+        "numerator": 5,
+        "denominator": 30,
+        "rate": 0.16666666666666666,
+        "ci95_low": 0.07336434240351683,
+        "ci95_high": 0.33564705185680177
+      },
+      "random_secret_pattern_agreement_evaluator_only": {
+        "mean": 0.22959798177083332,
+        "ci95_low": 0.2023903111801774,
+        "ci95_high": 0.2568056523614892
+      },
+      "mean_output_std": {
+        "mean": 0.09590673436953996,
+        "ci95_low": 0.07569184688849306,
+        "ci95_high": 0.11612162185058686
+      },
+      "explanations": {
+        "constant_region": 0,
+        "shared_pattern_nonconstant": 5,
+        "rounding_coincidence": 5,
+        "no_zero_recovery": 20
+      },
+      "models_with_constant_formal_region": null
+    },
+    {
+      "width": 4,
+      "trials": 30,
+      "training_success": {
+        "numerator": 30,
+        "denominator": 30,
+        "rate": 1.0,
+        "ci95_low": 0.8864829086095221,
+        "ci95_high": 1.0
+      },
+      "zero_full_recovery": {
+        "numerator": 7,
+        "denominator": 30,
+        "rate": 0.23333333333333334,
+        "ci95_low": 0.11792239210501232,
+        "ci95_high": 0.40928672330324267
+      },
+      "zero_exact_fraction": {
+        "mean": 0.259375,
+        "ci95_low": 0.10955515308320327,
+        "ci95_high": 0.40919484691679675
+      },
+      "distinct_patterns": {
+        "mean": 51.46666666666667,
+        "ci95_low": 46.173345701974554,
+        "ci95_high": 56.75998763135878
+      },
+      "random_full_recovery": {
+        "mean": 0.16410319010416666,
+        "ci95_low": 0.087755925625223,
+        "ci95_high": 0.24045045458311032
+      },
+      "zero_secret_pattern_agreement_evaluator_only": {
+        "numerator": 3,
+        "denominator": 30,
+        "rate": 0.1,
+        "ci95_low": 0.03459925995971615,
+        "ci95_high": 0.25621441315266624
+      },
+      "random_secret_pattern_agreement_evaluator_only": {
+        "mean": 0.08763020833333333,
+        "ci95_low": 0.06746141225070419,
+        "ci95_high": 0.10779900441596248
+      },
+      "mean_output_std": {
+        "mean": 0.09895431315526367,
+        "ci95_low": 0.08516421829282604,
+        "ci95_high": 0.11274440801770129
+      },
+      "explanations": {
+        "constant_region": 0,
+        "shared_pattern_nonconstant": 3,
+        "rounding_coincidence": 4,
+        "no_zero_recovery": 23
+      },
+      "models_with_constant_formal_region": null
+    },
+    {
+      "width": 8,
+      "trials": 30,
+      "training_success": {
+        "numerator": 30,
+        "denominator": 30,
+        "rate": 1.0,
+        "ci95_low": 0.8864829086095221,
+        "ci95_high": 1.0
+      },
+      "zero_full_recovery": {
+        "numerator": 1,
+        "denominator": 30,
+        "rate": 0.03333333333333333,
+        "ci95_low": 0.0059084379948573795,
+        "ci95_high": 0.16670751396958874
+      },
+      "zero_exact_fraction": {
+        "mean": 0.05416666666666667,
+        "ci95_low": -0.013961481877398041,
+        "ci95_high": 0.12229481521073138
+      },
+      "distinct_patterns": {
+        "mean": 1240.1333333333334,
+        "ci95_low": 1164.939760760536,
+        "ci95_high": 1315.3269059061308
+      },
+      "random_full_recovery": {
+        "mean": 0.018497721354166666,
+        "ci95_low": -0.003969584112815734,
+        "ci95_high": 0.04096502682114907
+      },
+      "zero_secret_pattern_agreement_evaluator_only": {
+        "numerator": 0,
+        "denominator": 30,
+        "rate": 0.0,
+        "ci95_low": -1.3877787807814457e-17,
+        "ci95_high": 0.113517091390478
+      },
+      "random_secret_pattern_agreement_evaluator_only": {
+        "mean": 0.010807291666666666,
+        "ci95_low": 0.006935963619511789,
+        "ci95_high": 0.014678619713821544
+      },
+      "mean_output_std": {
+        "mean": 0.10130770665903886,
+        "ci95_low": 0.08960759207713354,
+        "ci95_high": 0.11300782124094419
+      },
+      "explanations": {
+        "constant_region": 0,
+        "shared_pattern_nonconstant": 0,
+        "rounding_coincidence": 1,
+        "no_zero_recovery": 29
+      },
+      "models_with_constant_formal_region": null
+    }
+  ],
+  "linear_control": {
+    "trials": 30,
+    "zero_full_recovery": {
+      "numerator": 0,
+      "denominator": 30,
+      "rate": 0.0,
+      "ci95_low": -1.3877787807814457e-17,
+      "ci95_high": 0.113517091390478
+    },
+    "mean_output_std": {
+      "mean": 0.5782637894153595,
+      "ci95_low": 0.5773372504773288,
+      "ci95_high": 0.5791903283533902
+    }
+  }
+}
