@@ -1,0 +1,14 @@
+{
+  "run_id": "phase1_2_cpu_10_commit_65d3e07",
+  "trials": 10,
+  "successful_exact_recovery": 10,
+  "attacker_full_recoveries": {
+    "zero_input": 0,
+    "random_first": 0,
+    "random_mean": 0,
+    "output_bias_only": 0,
+    "best_random_probe_oracle": 0,
+    "untrained_random_first": 0
+  },
+  "mean_train_seconds": 0.28259818730293773
+}

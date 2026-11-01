@@ -1,0 +1,7 @@
+attack,mean_exact_fraction,max_exact_fraction,full_recoveries,mean_mae_tokens,min_mae_tokens
+zero_input,0.0,0.0,0,1561.440625,1339.609375
+random_first,0.0015625,0.015625,0,986.1578125,406.015625
+random_mean,0.0,0.0,0,492.503125,303.703125
+output_bias_only,0.0,0.0,0,1819.7046875,1646.421875
+best_random_probe_oracle,0.03125,0.046875,0,615.403125,309.140625
+untrained_random_first,0.0,0.0,0,1925.75625,1760.046875
