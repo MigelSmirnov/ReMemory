@@ -79,3 +79,19 @@ def test_dead_l1_candidate_equals_output_when_first_layer_is_silent():
 def test_zero_spectrum_has_zero_rank():
     s = spectrum_stats(np.zeros(5), 4095.0)
     assert s["rank_rel1e-3"] == 0 and s["entropy_rank"] == 0.0
+
+
+def test_observability_at_locally_constant_point():
+    model = _model(d=12, m=8)
+    with torch.no_grad():
+        model[0].bias.fill_(-100.0)
+    obs, J = observability(model, 4095.0, torch.randn(12) * 0.01, np.array([0, 2]), seed=1)
+    assert obs["jk_rank"] == 0 and obs["g_tok"] == 0.0 and obs["locally_constant"]
+
+
+def test_lm_survives_zero_jacobian():
+    model = _model(d=12, m=8)
+    with torch.no_grad():
+        model[0].bias.fill_(-1e6)
+    res = lm_fit(model, 4095.0, np.array([0, 1]), np.array([5.0, 9.0]), seed=1, iters=3)
+    assert np.isfinite(res["known_mse"])

@@ -167,7 +167,7 @@ def lm_fit(model, scale, known_idx, known_vals, seed, iters=100, restarts=8):
             jac_count += 1
             A = J @ J.T
             if lam is None:
-                lam = 1e-3 * float(torch.trace(A)) / k
+                lam = max(1e-3 * float(torch.trace(A)) / k, 1e-9)  # floor only matters when J_K = 0
             ok = False
             for _ in range(10):
                 step = -J.T @ torch.linalg.solve(A + lam * torch.eye(k, dtype=A.dtype), res)
@@ -209,13 +209,15 @@ def observability(model, scale, z, known_idx, seed):
         return out, J
     JK, JU = J[known_idx], J[unknown]
     _, s, vh = torch.linalg.svd(JK, full_matrices=True)
-    rank = int((s > REL_TOL * s[0]).sum())
+    rank = int((s > REL_TOL * s[0]).sum()) if s[0] > 0 else 0   # J_K = 0: locally constant known outputs
     nullspace = vh[rank:].T                                   # d x (d - rank)
     M = JU @ nullspace
     _, sm, vm = torch.linalg.svd(M, full_matrices=False)
     g = float(sm[0])
-    out.update({"jk_rank": rank, "jk_cond": float(s[0] / s[rank - 1]), "null_dim": int(nullspace.shape[1]),
-                "g_tok": g, "g_rel": g / float(torch.linalg.svdvals(JU)[0])})
+    ju_max = float(torch.linalg.svdvals(JU)[0])
+    out.update({"jk_rank": rank, "jk_cond": float(s[0] / s[rank - 1]) if rank else float("nan"),
+                "null_dim": int(nullspace.shape[1]), "g_tok": g, "g_rel": g / ju_max if ju_max > 0 else 0.0,
+                "locally_constant": bool(float(s[0]) == 0.0 and ju_max == 0.0)})
     v_worst = nullspace @ vm[0]
     gen = torch.Generator().manual_seed(seed)
     c = torch.randn(nullspace.shape[1], generator=gen, dtype=torch.float64)
