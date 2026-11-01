@@ -1,0 +1,36 @@
+{
+  "out": "/tmp/knc4a_commit_aa36c9a",
+  "input_dims": [
+    1,
+    4,
+    16,
+    256
+  ],
+  "widths": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    64
+  ],
+  "trials": 30,
+  "epochs": 2000,
+  "check_every": 25,
+  "lr": 0.01,
+  "probes": 256,
+  "ensemble_size": 32,
+  "threads": 2,
+  "seed": 41000,
+  "probe_seed": 42000,
+  "environment": {
+    "python": "3.12.3",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+    "torch": "2.15.0+cpu",
+    "numpy": "2.5.4",
+    "device": "cpu",
+    "cpu_count": 8,
+    "git_revision": "aa36c9a9af85f4e99bdfff1b0db53434094f9d64"
+  },
+  "secret_generation": "OS CSPRNG; entropy not persisted"
+}
